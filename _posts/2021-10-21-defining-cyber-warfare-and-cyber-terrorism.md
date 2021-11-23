@@ -5,7 +5,7 @@ title: Defining Cyberwarfare and Cyberterrorism
 ---
 
 ![_config.yml]({{site.baseurl}}/images/jimi-malmberg-NDH0hL313VY-unsplash-1.jpg)
-p>. _Photo by [Jimi Malmberg](https://unsplash.com/@jimi_malmberg) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_   
+ _Photo by [Jimi Malmberg](https://unsplash.com/@jimi_malmberg) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_   
 
 ## Introduction
 Since time immemorial, humans have waged war.  War against each other and possibly against [our humanoid ancestors too](https://www.bbc.com/future/article/20201102-did-neanderthals-go-to-war-with-our-ancestors). War is an intrinsic part of being human. It is little wonder that new technology drives motivation for advantage in warfare. Just as military dominance in the 19th-Century meant conquering the seas, and air superiority won wars in the 20th-Century, ruling cyberspace is strategic for the 21st-Century. Not surprisingly, applying age-old concepts of war and terrorism to new realms is controversial. This essay reviews various definitions of cyberwarfare and cyberterrorism, contrasting them with each other and comparing these definitions with uses by governments and the public. 
