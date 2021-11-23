@@ -3,9 +3,9 @@ published: true
 layout: post
 title: Defining Cyberwarfare and Cyberterrorism
 ---
-
 ![jimi-malmberg-NDH0hL313VY-unsplash-1.jpg]({{site.baseurl}}/_posts/jimi-malmberg-NDH0hL313VY-unsplash-1.jpg)
-_Photo by <a href="https://unsplash.com/@jimimalmberg">Jimi Malmberg</a> on <a href="https://unsplash.com/s/photos/cyber-warfare-terrorism">Unsplash</a>_  
+_Photo by [Jimi Malmberg](https://unsplash.com/@jimimalmberg) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_  
+
 ## Introduction
 Since time immemorial, humans have waged war.  War against each other and possibly against [our humanoid ancestors too](https://www.bbc.com/future/article/20201102-did-neanderthals-go-to-war-with-our-ancestors). War is an intrinsic part of being human. It is little wonder that new technology drives motivation for advantage in warfare. Just as military dominance in the 19th-Century meant conquering the seas, and air superiority won wars in the 20th-Century, ruling cyberspace is strategic for the 21st-Century. Not surprisingly, applying age-old concepts of war and terrorism to new realms is controversial. This essay reviews various definitions of cyberwarfare and cyberterrorism, contrasting them with each other and comparing these definitions with uses by governments and the public. 
 The words cyberwarfare (also written as 'cyber warfare' or cyber-warfare) and cyberterrorism (also 'cyber terrorism', cyber-terrorism), according to the Google Books Project, were [first mentioned in the 1970s](https://books.google.com/ngrams/graph?content=cyberterrorism%2Ccyber-terrorism%2Ccyber+terrorism&year_start=1800&year_end=2019&corpus=26&smoothing=3&direct_url=t1%3B%2Ccyberterrorism%3B%2Cc0%3B.t1%3B%2Ccyber%20-%20terrorism%3B%2Cc0%3B.t1%3B%2Ccyber%20terrorism%3B%2Cc0#t1%3B%2Ccyberterrorism%3B%2Cc0%3B.t1%3B%2Ccyber%20-%20terrorism%3B%2Cc0%3B.t1%3B%2Ccyber%20terrorism%3B%2Cc0). The usage of the words did not become common till the late 1990s. Interestingly, the word 'cyberterrorist' has always been the most popular term among the variations, whilst 'cyber warfare' remains the most popular among its variations.  For simplicity, this essay will use the compound word forms for both terms. 
