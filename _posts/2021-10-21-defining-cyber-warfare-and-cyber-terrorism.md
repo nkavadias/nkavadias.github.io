@@ -3,8 +3,7 @@ published: true
 layout: post
 title: Defining Cyberwarfare and Cyberterrorism
 ---
-
-![_config.yml]({{site.baseurl}}/images/jimi-malmberg-NDH0hL313VY-unsplash-1.jpg)
+![_config.yml]({{ site.baseurl }}/images/jimi-malmberg-NDH0hL313VY-unsplash-1.jpg)
  _Photo by [Jimi Malmberg](https://unsplash.com/@jimi_malmberg) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_   
 
 ## Introduction
