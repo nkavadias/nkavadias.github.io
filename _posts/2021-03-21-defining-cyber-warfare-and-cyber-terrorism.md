@@ -3,6 +3,8 @@ published: true
 layout: post
 title: Defining Cyberwarfare and Cyberterrorism
 ---
+_An essay on the definition of cyberwarfare and cyberterrorism, providing two examples of each._
+
 ![VR soldier]({{ site.baseurl }}/images/jimi-malmberg-unsplash-1.jpg "Cyberwarfare and Cyberterrorism") 
 _Photo by [Jimi Malmberg](https://unsplash.com/@jimi_malmberg) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_   
 
