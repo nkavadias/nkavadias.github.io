@@ -6,7 +6,7 @@ title: Research Report on the OPM data breach of 2015
 
 This is a report on the United States Office of Personnel Management (OPM) data breach of 2015. 
 
-![OPM logo with words data breach over the top]({{ site.baseurl }}/images/opm-data-breach.jpg "OPM Data breach") 
+![OPM logo with words data breach over the top]({{ site.baseurl }}/images/opm-data-breach.png "OPM Data breach") 
 ## Introduction
 In 16th-Century England, Queen Elizabeth I (a protestant) was under constant threat from the Catholics. To keep her safe, she appointed the spymaster [Sir Francis Walsingham](https://en.wikipedia.org/wiki/Francis_Walsingham). He was said to have a vast spy network all over Europe. Agents infiltrated rebel groups, merchant fleets and even posed as catholic priests. Walsingham’s spies would report back information such as names of rebels and potential plots.  Spying carried out by humans like this is known in the intelligence community as [HUMINT](https://en.wikipedia.org/wiki/Human_intelligence_(intelligence_gathering)). With the introduction of the telegraph and radio communications in the late 19th, early 20th Centuries, intelligence agencies adapted and developed signals intelligence [(SIGINT)](https://en.wikipedia.org/wiki/Signals_intelligence) to intercept and decode these communications. 
 
