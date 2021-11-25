@@ -1,7 +1,9 @@
 ---
-published: false
+layout: post
+published: true
+title: Research Report on the OPM data breach of 2015
 ---
-## Research Report on a Cybersecurity Incident
+
 This is a report on the United States Office of Personnel Management (OPM) data breach of 2015. 
 
 ## Introduction
