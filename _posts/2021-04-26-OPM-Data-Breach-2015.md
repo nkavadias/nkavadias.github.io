@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Research Report on the OPM data breach of 2015
+image: /images/opm-data-breach.png
 ---
 
 This is a report on the United States Office of Personnel Management (OPM) data breach of 2015. 
