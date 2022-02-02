@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: The Future of Cyber Warfare
+image: /images/aleksey-kashmar-unsplash.jpg
 ---
 _An essay on the future of cyber warfare, with predictions on what future cyber war may look like._
 
