@@ -5,7 +5,7 @@ title: Research Report on the OPM data breach of 2015
 image: /images/opm-data-breach.png
 ---
 
-This is a report on the United States Office of Personnel Management (OPM) data breach of 2015. 
+_This report discusses the data breach at the US Office of Personnel Management (OPM), which occurred between 2012 to 2015 and has been attributed to APT1. More than 20 million records on US Federal government employees were stolen in what was described by NSA's senior counsel as the theft of the Government’s crown jewels._ 
 
 ![OPM logo with words data breach over the top]({{ site.baseurl }}/images/opm-data-breach.png "OPM Data breach") 
 ## Introduction
