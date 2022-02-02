@@ -27,7 +27,7 @@ In defining cyberwarfare in law, legal scholars seek to interpret the term 'use 
 - the [Stuxnet virus in 2005](https://en.wikipedia.org/wiki/Stuxnet) (attributed to Israel) which sabotaged Iran's nuclear enrichment program by creating a virus that modified the SCADA systems to destroy centrifuges; and
 - the [Siberian pipeline explosion in 1982](https://en.wikipedia.org/wiki/At_the_Abyss) (if it did happen) caused by faulty pump values which the US Intelligence rigged via the SCADA system [(Rid, 2012)](https://doi.org/10.1080/01402390.2011.608939); would qualify as cyberwarfare.
  
-The news media use the term cyberwarfare and cyberattack almost interchangeably. A recent example is the [hacking of Parliament House emails](https://www.smh.com.au/politics/federal/intelligence-agencies-pinned-parliament-hack-on-beijing-report-20190916-p52rou.html). Whilst academics would consider this cyberespionage, the Sydney Morning Herald categories the story a cyberwarfare.
+The news media use the term cyberwarfare and cyberattack almost interchangeably. A recent example is the [hacking of Parliament House emails](https://www.smh.com.au/politics/federal/intelligence-agencies-pinned-parliament-hack-on-beijing-report-20190916-p52rou.html). Whilst academics would consider this cyberespionage, the Sydney Morning Herald categorises the story a cyberwarfare.
 
 ## Cyberterrorism
 
