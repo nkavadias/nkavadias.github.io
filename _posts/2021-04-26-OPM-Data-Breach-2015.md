@@ -21,7 +21,7 @@ On the 4th of June 2015, OPM announced the theft of 4.2 million federal governme
 
 ## The Type of Cyber-Conflict
 
-The OPM breach would be characterised as a cyberwar incident by many academics such as [Whyte & Mazanec (2018, p. 99)](https://amzn.to/3FLTGEB). Cyberwar meaning a _“discrete episode … [of] two politically recognisable entities engaged in hostile activities against one another entirely via cyberspace.”_ Using the more conservative definition of “cyberwar” by [Rid (2012, p.20)](https://doi.org/10.1080/01402390.2011.608939), the incident would only be characterised as cyber-espionage. Cyber-espionage is _“an attempt to penetrate an adversarial system for purposes of extracting sensitive or protected information”_, and according to Rid, the most common type of political cybersecurity incident.
+The OPM breach would be characterised as a cyberwar incident by many academics such as [Whyte & Mazanec (2018, p. 99)](https://amzn.to/3FLTGEB). Cyberwar meaning a _“discrete episode … [of] two politically recognisable entities engaged in hostile activities against one another entirely via cyberspace.”_ Using the more conservative definition of “cyberwar” by [Rid (2012, p.20)](https://files.catbox.moe/ii93cc.pdf), the incident would only be characterised as cyber-espionage. Cyber-espionage is _“an attempt to penetrate an adversarial system for purposes of extracting sensitive or protected information”_, and according to Rid, the most common type of political cybersecurity incident.
 
 ## Why OPM? The Motivation and Consequences of the Attack
 
