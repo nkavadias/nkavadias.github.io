@@ -12,4 +12,5 @@ Posts that are adapted from university assignment may seem a strange mixture of 
 
 For anyone that is curious, I am using GitHubs pages for this blog with some customisations I've made to the  [Jekyll Now template](https://github.com/barryclark/jekyll-now). Page source is [here](https://github.com/nkavadias/nkavadias.github.io).
 
-Also, the tagline isn't a typo, it's [a Ralph Wiggum quote](https://www.youtube.com/watch?v=Lrr7m7dRBPk).
+Also, the tagline isn't a typo, it's a Ralph Wiggum quote.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lrr7m7dRBPk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
