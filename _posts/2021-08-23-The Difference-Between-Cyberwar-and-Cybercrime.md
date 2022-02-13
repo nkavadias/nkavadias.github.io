@@ -1,16 +1,13 @@
 ---
 published: false
-
 layout: post
-
 title: The Difference between Cyberwar and Cybercrime
-
 image: /images/stillness-inmotion-unsplash-1.jpg
 ---
 
 _What is cyberwar? What is Cybercrime? This post explains the differences._
 
-![cyberwar cyberwarfare cyber warfare cyber criminal cybercrime ]({{ site.baseurl }}/images/stillness-inmotion-unsplash-1.jpgg "Cyberwarfare and Cybercrime") 
+![cyberwar cyberwarfare cyber warfare cyber criminal cybercrime ]({{ site.baseurl }}/images/stillness-inmotion-unsplash-1.jpg "Cyberwarfare and Cybercrime") 
 _Photo by [Stilness InMotion](https://unsplash.com/@stillnes_in_motion) on [Unsplash](https://unsplash.com/s/photos/cybercrime)_   
 
 ## Cyberwar
@@ -18,4 +15,4 @@ Cyberwar is an act of aggression carried out by or on behalf of state-based acto
 
 ## Cybercrime
 
-Cybercrime, in broad terms, is defined as _“any crime that is facilitated or committed using a computer, network, or hardware device”_ [(Gordon & Ford, 2006, p. 14)](. https://doi.org/10.1007/s11416-006-0015-z). Cybercrimes, much like real crimes, have perpetrators and victims. Cybercrimes are on a continuum of sophistication in their technology usage, ranging from _“technology-centric crimes”_ to _“people-centric crimes”_. A recent example of a technology-centric crime is the [Colonial Pipeline attack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack) where hackers broke into networks using compromised credentials, then deployed ransomware onto the network crippling the company’s infrastructure. This would be on the left of the continuum (see Figure 1). The crime involved high levels of technology such as hacking and custom code. At the other end of the spectrum, people-centric crimes are regular crimes committed with the use of technology, such as harassment, stalking, and dissemination of child pornography. These are crimes where computer software and tools used by everyone can be used to commit a crime.   
+Cybercrime, in broad terms, is defined as _“any crime that is facilitated or committed using a computer, network, or hardware device”_ [(Gordon & Ford, 2006, p. 14)](. https://doi.org/10.1007/s11416-006-0015-z). Cybercrimes, much like real crimes, have perpetrators and victims. Cybercrimes are on a continuum of sophistication in their technology usage, ranging from _“technology-centric crimes”_ to _“people-centric crimes”_. A recent example of a technology-centric crime is the [Colonial Pipeline attack](https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack) where hackers broke into networks using compromised credentials, then deployed ransomware onto the network crippling the company’s infrastructure. This would be on the left of the continuum (see Figure 1). The crime involved high levels of technology such as hacking and custom code. At the other end of the spectrum, people-centric crimes are regular crimes committed with the use of technology, such as harassment, stalking, and dissemination of child pornography. These are crimes where computer software and tools used by everyone can be used to commit a crime.
