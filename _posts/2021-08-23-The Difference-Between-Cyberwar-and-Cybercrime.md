@@ -19,4 +19,4 @@ Cybercrime, in broad terms, is defined as _“any crime that is facilitated or c
 
 ![The Continuum of Cybercrime]({{ site.baseurl }}/images/continuum-of-cybercrime.png "The Continuum of Cybercrime")
 
-_The Continuum of Cybercrime (Gordon & Ford, 2006, p. 15)_
+_Figure 1 - The Continuum of Cybercrime (Gordon & Ford, 2006, p. 15)_
