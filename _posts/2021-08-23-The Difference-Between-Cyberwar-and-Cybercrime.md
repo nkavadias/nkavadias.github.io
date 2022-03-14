@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: The Difference between Cyberwar and Cybercrime
 image: /images/stillness-inmotion-unsplash-1.jpg
