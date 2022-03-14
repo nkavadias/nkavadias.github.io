@@ -5,7 +5,7 @@ title: The Difference between Cyberwar and Cybercrime
 image: /images/stillness-inmotion-unsplash-1.jpg
 ---
 
-_What is cyberwar? What is Cybercrime? This post explains the differences._
+_What is cyberwar? What is cybercrime? This post explains the differences._
 
 ![cyberwar cyberwarfare cyber warfare cyber criminal cybercrime ]({{ site.baseurl }}/images/stillness-inmotion-unsplash-1.jpg "Cyberwarfare and Cybercrime") 
 _Photo by [Stilness InMotion](https://unsplash.com/@stillnes_in_motion) on [Unsplash](https://unsplash.com/s/photos/cybercrime)_   
