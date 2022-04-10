@@ -11,7 +11,7 @@ image: /images/michael-dziedzic-unsplash1.jpg
 _How do you define a computer virus? how is this different to a computer worm? What role does encryption play in viruses and worms?_
 
 ![fuzzy computer screen]({{ site.baseurl }}/images/michael-dziedzic-unsplash1.jpg "computer viruses vs computer worms") 
-_Photo by [Michael Dziedzic](https://unsplash.com/@lazycreekimages) on [Unsplash](https://unsplash.com/s/photos/computer-virus)_   
+_Photo by [Michael Dziedzic](https://unsplash.com/@lazycreekimages){:target="_blank"}  on [Unsplash](https://unsplash.com/s/photos/computer-virus){:target="_blank"}_   
 
 ## Computer Virus
 A computer virus is a malicious program that is triggered by an activation of some kind on a computer host. Viruses can replicate themselves, and they can take control of a victim’s computer, steal, manipulate or delete data. Viruses are often hidden in executable programs and scripts and occasionally non-executables such as documents. One of the first document viruses was the Melissa virus which infected a host when the malicious Microsoft Word document was opened. The virus would also email itself to the victims top 50 recipients in their Microsoft Outlook (FBI, 2019).  
