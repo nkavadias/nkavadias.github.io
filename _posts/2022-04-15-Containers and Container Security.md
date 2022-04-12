@@ -1,10 +1,12 @@
 ---
 published: false
+
 layout: post
+
 title: Containers and Container Security
+
 image: /images/wild-vibes-unsplash-1.jpg
-Photo by <a href="https://unsplash.com/@carrier_lost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian Taylor</a> on <a href="https://unsplash.com/s/photos/docker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 ---
   
 _This report discusses why containers have become popular in recent years and how they differ from virtual machines (VMs). The threats and vulnerabilities to containers are summarised based on research findings. High-level advice for mitigations and countermeasures of these threats is offered as well as strategic to enterprises for improving container security._
