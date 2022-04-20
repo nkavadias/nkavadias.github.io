@@ -5,7 +5,7 @@ layout: post
 
 title: Containers and Container Security
 
-image: /images/wild-vibes-unsplash-1.jpg
+image: /images/ian-taylor-unsplash1.jpg
 
 ---
   
@@ -72,12 +72,12 @@ A recent research paper by Wong et al. (2021) performed the STRIDE threat model 
 
 | **Threat Categories**            | **Threats** |
 | -------------------------------- | ------------|
-| **_S_**_poofing_                 | 4           |
-| **_T_**_ampering_                | 4           |
-| **_R_**_epudiation_              | 2           |
-| **_I_**_nformation Disclosure_   | 3           |
-| **_D_**_enial of Service_        | 2           |
-| **_E_**_levation of Privilege_   | 4           |
+| **_S_**_poofing_                 |  4          |
+| **_T_**_ampering_                |  4          |
+| **_R_**_epudiation_              |  2          |
+| **_I_**_nformation Disclosure_   |  3          |
+| **_D_**_enial of Service_        |  2          |
+| **_E_**_levation of Privilege_   |  4          |
 
 _Table 1 - Summary of STRIDE threats for containers found in [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_
 
