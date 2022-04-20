@@ -70,17 +70,16 @@ Many of the threats and vulnerabilities of container hosted applications are the
 ## Threat Modeling for Containers
 A recent research paper by Wong et al. (2021) performed the STRIDE threat model against the three main components of Docker containers, i.e. the registry server, the container host and the container image. The analysis included traditional threats from application vulnerabilities and the container host operating system. The results are summarised in Table 1 .
 
-_Table 1,  Table 1 Summary of STRIDE threats for containers found in [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_
+| **Threat Categories**            | **Threats** |
+| -------------------------------- | ------------|
+| **_S_**_poofing_                 | 4           |
+| **_T_**_ampering_                | 4           |
+| **_R_**_epudiation_              | 2           |
+| **_I_**_nformation Disclosure_   | 3           |
+| **_D_**_enial of Service_        | 2           |
+| **_E_**_levation of Privilege_   | 4           |
 
-| **Threat Categories**          | **Threats** |
-| ------------------------------ | ------------|
-| **_S_**_poofing_               | 4           |
-| **_T_**_ampering_              | 4           |
-| **_R_**_epudiation_            | 2           |
-| **_I_**_nformation Disclosure_ | 3           |
-| **_D_**_enial of Service_      | 2           |
-| **_E_**_levation of Privilege_ | 4           |
-
+_Table 1 - Summary of STRIDE threats for containers found in [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_
 
 Researchers [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"} performed a literate review of container security and found three major threat categories for containers: container image security, container-to-container security, and host-to-container security. This report will use these threats categories for its discussion. 
 
