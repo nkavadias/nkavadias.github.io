@@ -35,15 +35,15 @@ _Figure 1 - The virtual machine stack vs. the container stack_
 Containers consist of four main components (see Figure 2) being [(McCarty, 2021)](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction){:target="_blank"}:
 ### 1.	The Container Image
 The file that makes up the file system of a container. The image includes libraries and binaries needed for a running application. It follows a format defined by the Open Container Initiative (OCI)  and is stored on the Registry Server.
-### 1.	The Container Host
+### 2.	The Container Host
 This is the computer system on top of which the container executes the Container Image. The Container Host contains the following elements:
 #### a)	The Container Engine
 The Command Line Interface (CLI) accepts user requests to pull images from the registry server and start and stop images on the Container Host.
 #### b)	The Container Runtime
 The lower-level component of the Container Engine that actually runs the container. Early versions of Docker Engine used LXC as a runtime. Later, Docker built its own version, which was open-sourced and called Runc. Kubernetes has deprecated the use of Runc and now uses its own container runtime called CRI-O.
-### 1.	The Registry Server
+### 3.	The Registry Server
 The file repository for container images which are created and pushed to the server and pulled from the server to run on the container host
-### 1.	The Container Orchestrator 
+### 4.	The Container Orchestrator 
 The orchestrator is used for wiring containers together so that they may be deployed as a unit. It can create pipelines with these units and deploys them across different container hosts. It can also dynamically schedules container workloads in a cluster of computers, such as scale-up/scale down. 
 
 ![components of containers]({{ site.baseurl }}/images/containers-figure2.png)
@@ -55,6 +55,7 @@ There are so many vendors, platform providers,  and software name components in 
 * Docker Engine/Daemon for the container host;
 * DockerHub as a public registry server for container images; and
 * Docker Swarm as a container orchestrator. 
+
 Although Docker may be synonymous with containers and many research papers such as [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"} cite Docker as the “predominant container technology”, and [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"} states that Docker is “the most widely employed container runtime” with 79% market share, according to [Fulton (2020)](https://www.datacenterknowledge.com/business/after-kubernetes-victory-its-former-rivals-change-tack){:target="_blank"} Docker has lost the container war to Kubernetes.  
 
 Google created Kubernetes in 2014 to manage and orchestrate containers with the Docker runtime as an alternative to Docker Swarm. In 2015 Google open-sourced Kubernetes and created the Cloud Native Computing Foundation (CNCF) in what [Fulton](https://www.datacenterknowledge.com/business/after-kubernetes-victory-its-former-rivals-change-tack){:target="_blank"} describes as “suspect timing”. In 2020, Kubernetes deprecated the Docker Engine in favour of its engine called CRI-O [(Kubernetes, 2020)](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/){:target="_blank"}. Kubernetes has come to dominate the market as the platform for running production container workloads. All major public cloud providers offer Kubernetes as Platform-as-a-Service (PaaS). Openshift (by Redhat) is even sold as an end-to-end container solution for the enterprise that manages Kubernetes clusters for private and public cloud landing zones [(Herness, 2021)](https://medium.com/hybrid-cloud-engineering/hybrid-cloud-decisions-when-to-target-public-and-private-f3a6c3c0ed4a){:target="_blank"}. 
@@ -69,6 +70,7 @@ Many of the threats and vulnerabilities of container hosted applications are the
 ## Threat Modeling for Containers
 A recent research paper by Wong et al. (2021) performed the STRIDE threat model against the three main components of Docker containers, i.e. the registry server, the container host and the container image. The analysis included traditional threats from application vulnerabilities and the container host operating system. The results are summarised in Table 1 .
 _Table 1,  Table 1 Summary of STRIDE threats for containers found in [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_
+
 | **Threat CategorIES**          | **Number of ThreatS** |
 | ------------------------------ | --------------------- |
 | **_S_**_poofing_               | 4                     |
@@ -89,14 +91,14 @@ Container images can be compromised in transit if there is no image verification
 #### Mitigations and Countermeasures 
 The common recommendation for mitigating the threat of image containers is to deploy vulnerability and malware scanning tools to CD/CI pipelines that build container images. Even so, this is not a complete solution. Research by [Javed (2021)](https://arxiv.org/abs/2101.03844) tested container scanning tools and found the detection-hit-ratio to be 65%. This means enterprises need to take great care in building and maintaining images using good security practices and not simply rely on scanning tools as an afterthought. Cloud providers offer private server registries; meaning organisations can source images from trusted sources, add their own components and build images in a private registry. Containers should be deployed into test environments and undergo security auditing before being approved for deployment into production. 
 
-### 1.	Container-to-Host isolation 
+### 2.	Container-to-Host isolation 
 #### Threats and Vulnerabilities
 One of the disadvantages of containers over VMs is that the container and the host OSes are more tightly coupled. This means that if privilege escalation is achieved inside the container, it is much easier to take control of the host (which could be running hundreds of containers). In VMs this would not be possible as each machine runs its own kernel, making it isolated to the underlying host operating system. This type of exploit is known as container escape, and there are published Common Vulnerability Exposures (CVEs) using these exploits; CVE-2017-5123 and CVE-2016-5195 [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"}.
 There are also threats created to the underlying host due to shared storage. Containers are considered immutable, which means that persistent storage that needs to maintain state (such as database files, or log files) needs to be maintained in storage on the underlying host or network storage. This creates additional challenges for data security and for SIEM/SOAR [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_. 
 #### Mitigations and Countermeasures 
 The most common recommendation for improving container-to-host isolation is to use operating system level tools which come with Linux, such as SE Linux and AppArmor. 
 Another alternative is to change the container runtime. The default runtimes for Docker and Kubernetes are RunC and CRI-O, respectively. They allow unrestricted kernel calls to the host OS. More secure alternatives add an extra layer of security to restrict what kernel calls the container can make to the host OS. Research by [Viktorsson et al. (2020)](https://doi.org/10.1109/mascots50786.2020.9285946){:target="_blank"}, tested popular alternative runtimes and found that this countermeasure security makes containers run 40 to 60% slower. Enterprises may also want to use a hybrid model that combines the use of VMs and containers to maintain host-to-guest isolation. Enterprise tools such as OpenShift are designed to use this hybrid model.  
-### 1.	Container-to-Container isolation
+### 3.	Container-to-Container isolation
 #### Threats and Vulnerabilities
 By default, containers on Docker use private-host networking allowing open communication between containers on the same host. With Kubernetes pods (a pod is a collection of containerised applications and volumes), there is open network communication between containers no matter what host they run on. This means that traditional attack methods can be used to compromise one container, such as remote code execution (RCE), by finding and exploiting open network services, ARP spoofing, or MAC flooding. By default, containers do not have resource limits, thus risking DoS attacks. Consuming resources (CPU/memory/disk) on one container can lead to the exhaustion of the resource on all containers. [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"}
 #### Mitigations and Countermeasures 
@@ -107,35 +109,30 @@ The adoption of containers by enterprises for running applications will continue
 
 ## References
 
-Altvater, A. (2019, May 1). *What is N-Tier Architecture? How It Works, Examples, Tutorials, and More*. Stackify. https://stackify.com/n-tier-architecture/
+Altvater, A. (2019, May 1). *What is N-Tier Architecture? How It Works, Examples, Tutorials, and More*. Stackify. [https://stackify.com/n-tier-architecture/](https://stackify.com/n-tier-architecture/)
+Beedham, M. (2019, November 28). *Hackers mass-scan for Docker vulnerability to mine Monero cryptocurrency*. The Next Web. [https://thenextweb.com/news/hackers-mass-scan-for-docker-vulnerability-to-mine-monero-cryptocurrency](https://thenextweb.com/news/hackers-mass-scan-for-docker-vulnerability-to-mine-monero-cryptocurrency)
 
-Beedham, M. (2019, November 28). *Hackers mass-scan for Docker vulnerability to mine Monero cryptocurrency*. TNW | Hardfork. https://thenextweb.com/news/hackers-mass-scan-for-docker-vulnerability-to-mine-monero-cryptocurrency
+Cimpanu, C. (2019, April 27). *Docker Hub hack exposed data of 190,000 users*. ZDNet. [https://www.zdnet.com/article/docker-hub-hack-exposed-data-of-190000-users/](https://www.zdnet.com/article/docker-hub-hack-exposed-data-of-190000-users/)
 
-Cimpanu, C. (2019, April 27). *Docker Hub hack exposed data of 190,000 users*. ZDNet. https://www.zdnet.com/article/docker-hub-hack-exposed-data-of-190000-users/
+Fulton, S., III. (2020, January 28). *After Kubernetes’ Victory, Its Former Rivals Change Tack*. Data Center Knowledge. Retrieved 12 January 2022, from [https://www.datacenterknowledge.com/business/after-kubernetes-victory-its-former-rivals-change-tack]([https://www.datacenterknowledge.com/business/after-kubernetes-victory-its-former-rivals-change-tack)
 
-Fulton, S., III. (2020, January 28). *After Kubernetes’ Victory, Its Former Rivals Change Tack*. Data Center Knowledge. Retrieved 12 January 2022, from https://www.datacenterknowledge.com/business/after-kubernetes-victory-its-former-rivals-change-tack
+Goodin, D. (2018, June 14). *Backdoored images downloaded 5 million times finally removed from Docker Hub*. Ars Technica. [https://arstechnica.com/information-technology/2018/06/backdoored-images-downloaded-5-million-times-finally-removed-from-docker-hub/](https://arstechnica.com/information-technology/2018/06/backdoored-images-downloaded-5-million-times-finally-removed-from-docker-hub/)
 
-Goodin, D. (2018, June 14). *Backdoored images downloaded 5 million times finally removed from Docker Hub*. Ars Technica. https://arstechnica.com/information-technology/2018/06/backdoored-images-downloaded-5-million-times-finally-removed-from-docker-hub/
+Herness, E. (2021, December 24). *Hybrid Cloud Decisions: When to Target Public and Private?* Medium. Retrieved 16 January 2022, from [https://medium.com/hybrid-cloud-engineering/hybrid-cloud-decisions-when-to-target-public-and-private-f3a6c3c0ed4a]( https://medium.com/hybrid-cloud-engineering/hybrid-cloud-decisions-when-to-target-public-and-private-f3a6c3c0ed4a)
 
-Herness, E. (2021, December 24). *Hybrid Cloud Decisions: When to Target Public and Private?* Medium. Retrieved 16 January 2022, from https://medium.com/hybrid-cloud-engineering/hybrid-cloud-decisions-when-to-target-public-and-private-f3a6c3c0ed4a
+Javed, O. (2021, January 11). *Understanding the Quality of Container Security Vulnerability.* arXiv.Org. [https://arxiv.org/abs/2101.03844](https://arxiv.org/abs/2101.03844)
 
-*Inquire | Northwest School Wooden Boat Bulding Port Hadlock Washington*. (2021, January 15). Northwest School of Wooden BoatBuilding. Retrieved 25 March 2022, from https://www.nwswb.edu/questions/
+Kubernetes. (2020, December 22). *Don’t Panic: Kubernetes and Docker*. Retrieved 12 January 2022, from [https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
 
-Javed, O. (2021, January 11). *Understanding the Quality of Container Security Vulnerability. . .* arXiv.Org. https://arxiv.org/abs/2101.03844
+McCarty, S. (2021, December 6). *A Practical Introduction to Container Terminology*. Red Hat Developer. Retrieved 15 January 2022, from [https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction)
 
-Kubernetes. (2020, December 22). *Don’t Panic: Kubernetes and Docker*. Retrieved 12 January 2022, from https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/
+Morag, A. (2021, August 12). *Threat Alert: Supply Chain Attacks Using Container Images*. Aqua Blog. Retrieved 12 January 2022, from [https://blog.aquasec.com/supply-chain-threats-using-container-images](https://blog.aquasec.com/supply-chain-threats-using-container-images)
 
-McCarty, S. (2021, December 6). *A Practical Introduction to Container Terminology*. Red Hat Developer. Retrieved 15 January 2022, from https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction
+Sharwood, S. (2020, June 25). *Containers to capture 15% of all enterprise apps across 75% of business by 2024*. The Register. Retrieved 10 January 2022, from [https://www.theregister.com/2020/06/25/container\_forecast\_gartner/](https://www.theregister.com/2020/06/25/container\_forecast\_gartner/)
 
-Morag, A. (2021, August 12). *Threat Alert: Supply Chain Attacks Using Container Images*. Aqua Blog. Retrieved 12 January 2022, from https://blog.aquasec.com/supply-chain-threats-using-container-images
+Sultan, S., Ahmad, I., & Dimitriou, T. (2019). Container Security: Issues, Challenges, and the Road Ahead. *IEEE Access*, *7*, 52976–52996. [https://doi.org/10.1109/access.2019.2911732](https://doi.org/10.1109/access.2019.2911732)
 
-Muñoz, S. (2019, October 24). *The history of virtualization and its mark on data center management*. SearchServerVirtualization. https://searchservervirtualization.techtarget.com/feature/The-history-of-virtualization-and-its-mark-on-data-center-management
+Viktorsson, W., Klein, C., & Tordsson, J. (2020). Security-Performance Trade-offs of Kubernetes Container Runtimes. *2020 28th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)*. [https://doi.org/10.1109/mascots50786.2020.9285946](https://doi.org/10.1109/mascots50786.2020.9285946)
 
-Sharwood, S. (2020, June 25). *Containers to capture 15% of all enterprise apps across 75% of business by 2024*. The Register. Retrieved 10 January 2022, from https://www.theregister.com/2020/06/25/container\_forecast\_gartner/
+Wong, A. Y., Chekole, E. G., Ochoa, M., & Zhou, J. (2021, November). *Threat Modeling and Security Analysis of Containers: A Survey*. arXiv.org. [https://arxiv.org/abs/2111.11475](https://arxiv.org/abs/2111.11475)
 
-Sultan, S., Ahmad, I., & Dimitriou, T. (2019). Container Security: Issues, Challenges, and the Road Ahead. *IEEE Access*, *7*, 52976–52996. https://doi.org/10.1109/access.2019.2911732
-
-Viktorsson, W., Klein, C., & Tordsson, J. (2020). Security-Performance Trade-offs of Kubernetes Container Runtimes. *2020 28th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)*. https://doi.org/10.1109/mascots50786.2020.9285946
-
-Wong, A. Y., Chekole, E. G., Ochoa, M., & Zhou, J. (2021, November). *Threat Modeling and Security Analysis of Containers: A Survey*. arXiv.org. https://arxiv.org/abs/2111.11475
-![](Aspose.Words.5be99bd8-561f-47df-97b4-cc850c6c0823.001.png)
