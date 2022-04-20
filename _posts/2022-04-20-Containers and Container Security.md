@@ -69,16 +69,17 @@ Many of the threats and vulnerabilities of container hosted applications are the
 
 ## Threat Modeling for Containers
 A recent research paper by Wong et al. (2021) performed the STRIDE threat model against the three main components of Docker containers, i.e. the registry server, the container host and the container image. The analysis included traditional threats from application vulnerabilities and the container host operating system. The results are summarised in Table 1 .
+
 _Table 1,  Table 1 Summary of STRIDE threats for containers found in [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_
 
-| **Threat CategorIES**          | **Number of ThreatS** |
-| ------------------------------ | --------------------- |
-| **_S_**_poofing_               | 4                     |
-| **_T_**_ampering_              | 4                     |
-| **_R_**_epudiation_            | 2                     |
-| **_I_**_nformation Disclosure_ | 3                     |
-| **_D_**_enial of Service_      | 2                     |
-| **_E_**_levation of Privilege_ | 4                     |
+| **Threat Categories**          | **Threats** |
+| ------------------------------ | ------------|
+| **_S_**_poofing_               | 4           |
+| **_T_**_ampering_              | 4           |
+| **_R_**_epudiation_            | 2           |
+| **_I_**_nformation Disclosure_ | 3           |
+| **_D_**_enial of Service_      | 2           |
+| **_E_**_levation of Privilege_ | 4           |
 
 
 Researchers [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"} performed a literate review of container security and found three major threat categories for containers: container image security, container-to-container security, and host-to-container security. This report will use these threats categories for its discussion. 
@@ -94,7 +95,7 @@ The common recommendation for mitigating the threat of image containers is to de
 ### 2.	Container-to-Host isolation 
 #### Threats and Vulnerabilities
 One of the disadvantages of containers over VMs is that the container and the host OSes are more tightly coupled. This means that if privilege escalation is achieved inside the container, it is much easier to take control of the host (which could be running hundreds of containers). In VMs this would not be possible as each machine runs its own kernel, making it isolated to the underlying host operating system. This type of exploit is known as container escape, and there are published Common Vulnerability Exposures (CVEs) using these exploits; CVE-2017-5123 and CVE-2016-5195 [Sultan et al. (2019)](https://doi.org/10.1109/access.2019.2911732){:target="_blank"}.
-There are also threats created to the underlying host due to shared storage. Containers are considered immutable, which means that persistent storage that needs to maintain state (such as database files, or log files) needs to be maintained in storage on the underlying host or network storage. This creates additional challenges for data security and for SIEM/SOAR [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}_. 
+There are also threats created to the underlying host due to shared storage. Containers are considered immutable, which means that persistent storage that needs to maintain state (such as database files, or log files) needs to be maintained in storage on the underlying host or network storage. This creates additional challenges for data security and for SIEM/SOAR [Wong et al. (2021)](https://arxiv.org/abs/2111.11475){:target="_blank"}. 
 #### Mitigations and Countermeasures 
 The most common recommendation for improving container-to-host isolation is to use operating system level tools which come with Linux, such as SE Linux and AppArmor. 
 Another alternative is to change the container runtime. The default runtimes for Docker and Kubernetes are RunC and CRI-O, respectively. They allow unrestricted kernel calls to the host OS. More secure alternatives add an extra layer of security to restrict what kernel calls the container can make to the host OS. Research by [Viktorsson et al. (2020)](https://doi.org/10.1109/mascots50786.2020.9285946){:target="_blank"}, tested popular alternative runtimes and found that this countermeasure security makes containers run 40 to 60% slower. Enterprises may also want to use a hybrid model that combines the use of VMs and containers to maintain host-to-guest isolation. Enterprise tools such as OpenShift are designed to use this hybrid model.  
@@ -110,6 +111,7 @@ The adoption of containers by enterprises for running applications will continue
 ## References
 
 Altvater, A. (2019, May 1). *What is N-Tier Architecture? How It Works, Examples, Tutorials, and More*. Stackify. [https://stackify.com/n-tier-architecture/](https://stackify.com/n-tier-architecture/)
+
 Beedham, M. (2019, November 28). *Hackers mass-scan for Docker vulnerability to mine Monero cryptocurrency*. The Next Web. [https://thenextweb.com/news/hackers-mass-scan-for-docker-vulnerability-to-mine-monero-cryptocurrency](https://thenextweb.com/news/hackers-mass-scan-for-docker-vulnerability-to-mine-monero-cryptocurrency)
 
 Cimpanu, C. (2019, April 27). *Docker Hub hack exposed data of 190,000 users*. ZDNet. [https://www.zdnet.com/article/docker-hub-hack-exposed-data-of-190000-users/](https://www.zdnet.com/article/docker-hub-hack-exposed-data-of-190000-users/)
