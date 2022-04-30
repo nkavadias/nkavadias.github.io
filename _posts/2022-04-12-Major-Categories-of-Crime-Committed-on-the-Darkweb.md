@@ -3,7 +3,7 @@ published: true
 
 layout: post
 
-title: The major Categories of Crime Committed on the Darkweb
+title: The Major Categories of Crime Committed on the Darkweb
 
 image: /images/wild-vibes-unsplash-1.jpg
 
