@@ -6,6 +6,8 @@ layout: post
 title: Defining Cyberwarfare and Cyberterrorism
 
 image: /images/jimi-malmberg-unsplash-1.jpg
+
+categories: [Cybersecurity, Cyberwarfare, Cyberterrorism]
 ---
 
 _An essay on the definition of cyberwarfare and cyberterrorism and how Australia's terrorism laws differ from other western democracies._

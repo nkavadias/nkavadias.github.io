@@ -1,8 +1,13 @@
 ---
 published: true
+
 layout: post
+
 title: The major Categories of Crime Committed on the Darkweb
+
 image: /images/wild-vibes-unsplash-1.jpg
+
+categories: [Darkweb, Cybercrime, Cybersecurity]
 ---
   
 _What are the major categories of crime committed on the darkweb? This quick post outlines the categories._

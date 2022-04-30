@@ -7,6 +7,7 @@ title: Containers and Container Security
 
 image: /images/ian-taylor-unsplash1.jpg
 
+categories: [Cybersecurity, Containers, Docker, Kubernetes]
 ---
   
 _This report discusses what containers are and how they differ from virtual machines (VMs). The threats and vulnerabilities to containers are summarised based on research findings. Major threat categories of containers are discussed and high level advice for mitigations and countermeasures is offered._

@@ -6,6 +6,8 @@ layout: post
 title: Distinguishing Between Computer Viruses and Computer Worms
 
 image: /images/michael-dziedzic-unsplash1.jpg
+
+categories: Cybersecurity
 ---
 
 _How do you define a computer virus? how is this different to a computer worm? What role does encryption play in viruses and worms? This quick post explains._
