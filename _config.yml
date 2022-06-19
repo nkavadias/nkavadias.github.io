@@ -20,7 +20,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: 
+  github: nkavadias
   instagram:
   linkedin: "nicholas-kavadias"
   pinterest:
@@ -36,6 +36,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+#has been done manually in adding tracker to headers
 google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
