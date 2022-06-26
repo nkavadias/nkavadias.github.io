@@ -3,7 +3,7 @@ published: true
 layout: post
 title: The Future of Cyber Warfare
 image: /images/aleksey-kashmar-unsplash.jpg
-categories: [cyberwarfare]
+categories: [Cyberwarfare]
 ---
 _An essay on the future of cyber warfare, with predictions on what the future of cyber warfare may look like, with a brief look at what Australia's policy reponse to these threats._
 

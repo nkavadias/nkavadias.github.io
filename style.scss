@@ -674,12 +674,13 @@ Modules - reusable parts of our design
 }
 
 .category-head {
-  font-size: 28px;
-  padding: 2px 13px;
-  border: none;
-  background-color: #1e2F97;
-  border-radius: 50px;
-  color: #fff;
+	font-size: 28px;
+	padding: 8px 10px;
+	border: none;
+	background-color: #1e2F97;
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
 }
 .pagination a, .pagination span {
   padding: 7px 18px;
