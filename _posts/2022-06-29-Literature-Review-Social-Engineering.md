@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 
 layout: post
 
@@ -7,7 +7,7 @@ title: A Literature Review of Social Engineering Techniques used in Phishing
 
 image: /images/setyaki-irham-unsplash-1.jpg
 
-categories: [Social Engineering, ,Phishing, Cybersecurity]
+categories: [Social Engineering ,Phishing, Cybersecurity]
 ---
 
 _Three recent research papers on the use of social engineering techniques in phishing were reviewed. The papers were evaluated for their strengths and weaknesses and their usefulness in a business context and recommendations ._
@@ -16,13 +16,13 @@ _Three recent research papers on the use of social engineering techniques in phi
   
 _Photo by [Setyaki Irham](https://unsplash.com/@setyaki){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/hacking){:target="_blank"}_   
 
-## Introduction
+# Introduction
 Three recent research papers on the use of social engineering techniques in phishing were reviewed. Two of them evaluate the effectiveness of social engineering persuasion techniques used in phishing. The third paper investigates a broader range of hacking techniques that use social engineering. 
 The papers were evaluated for their strengths and weaknesses and their usefulness in a business context. If you are interested in what the structure of an annotated bibliography should look like, then have a read of [What is an annotated bibliography?](https://students.unimelb.edu.au/academic-skills/explore-our-resources/referencing/writing-an-annotated-bibliography#what%20is%20an%20annotated%20bibliography){:target="_blank"}
 This work was submitted as part of a research report for the [Dark Web subject (ITC578)](https://www.csu.edu.au/handbook/handbook19/subjects/ITC578.html) at [Charles Sturt University](https://www.csu.edu.au/){:target="_blank"}.
 
 
-## Reviews
+# Review
 
 ### Lawson, P., Pearson, C. J., Crowson, A., & Mayhorn, C. B. (2020). Email phishing and signal detection: How persuasion principles and personality influence response patterns and accuracy. _Applied Ergonomics, 86, 103084._ [https://doi.org/10.1016/j.apergo.2020.103084](https://doi.org/10.1016/j.apergo.2020.103084){:target="_blank"}
 
@@ -34,8 +34,9 @@ The results confirmed previous research findings that high extroversion levels c
 ## Evaluation of Strengths and Weaknesses
 
 The research confirmed previous findings regarding personality traits and susceptibility to phishing and new findings relating to which personalities are more susceptible to persuasion techniques. Although the researchers performed a literature review of other research related to phishing susceptibility, which showed factors such as age and participation and that phishing identification training played a part in phishing susceptibility, these factors were not considered in the research. The research also failed to consider or try to simulate real-world phishing where users can inspect email hyperlinks or email headers such as the name and email address of the sender.  
-
-### Butavicius, M., Parsons, K., Pattinson, M., & McCormac, A. (2015). Breaching the Human Firewall: Social engineering in Phishing and Spear-Phishing Emails. _Australasian Conference on Information Systems, Adelaide, South Australia._ [https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails](https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails){:target="_blank"}
+<br>
+<br>
+### Butavicius, M., Parsons, K., Pattinson, M., & McCormac, A. (2015). Breaching the Human Firewall: Social engineering in Phishing and Spear-Phishing Emails. [_Australasian Conference on Information Systems, Adelaide, South Australia._](https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails){:target="_blank"}
 
 ## Summary of the Main Ideas and Arguments
 Butavicius et al. (2015) performed research on 121 student participants to measure how effective four of the six persuasion techniques are in phishing and spear-phishing. Participants were instructed in a lab environment on how to hover over a link in an email body to show the intended destination and then given emails that used three of the six social engineering persuasion techniques: authority, social proof and scarcity, and emails that used none. Participants then rated responses on how safe they thought the links were to click. Research results were analysed using signal detection theory. Participants were worst at detecting spear-phishing emails, with 71% of participants evaluating the emails as safe to click. Participants found genuine emails were safe to click 77% of the time and phishing emails to be safe 37% of the time. Interestingly, phishing emails that contained no use of persuasion principles had the highest level of link safety confidence. The study confirmed other research, which found that participants with poor impulse control performed worse at detecting phishing emails. 
@@ -45,8 +46,9 @@ The research highlighted that existing phishing awareness training is ineffectiv
 
 ## Usefulness 
 The research provides insights into the effectiveness of phishing and spear-phishing and how effective training, especially in improving impulse control, may improve the phishing susceptibility of users. One of the most interesting findings is that phishing which did not deploy the use of any persuasion techniques was the most effective, and conveying this to users in training should be essential so that users remain vigilant against phishing attacks and not just be wary of emails which use the authority or scarcity persuasion technique. 
-
-### Lohani, S. (2019). Social Engineering: Hacking into Humans. _International Journal Of Advanced Studies Of Scientific Research (IJASSR), 4(1), 385–393._  [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3329391#](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3329391#){:target="_blank"}
+<br>
+<br>
+### Lohani, S. (2019). Social Engineering: Hacking into Humans. [_International Journal Of Advanced Studies Of Scientific Research (IJASSR), 4(1), 385–393._](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3329391#){:target="_blank"}
 
 This conference paper by Lohani (2019) is a high-level survey of the most popular social engineering techniques used today in cyber-attacks. According to the paper, 95% of cybersecurity attacks involve social engineering. The paper describes these social engineering techniques and provides recent examples for some of them. The most prevalent techniques are phishing, spear phishing, baiting, watering hole attack, pretexting attack and quid pro quo. The paper also offers fourteen different practical mitigation solutions to mitigate these attacks.
 
@@ -57,6 +59,8 @@ The paper provides high-level details of how phishing techniques work and how th
 
 ## Usefulness 
 The paper is useful in explaining how threat actors carry out social engineering attacks in a non-technical way that would appeal to a broad audience. Although the advice for mitigation is generic, it offers one good piece of advice: to increase awareness of social engineering attacks through education. 
+<br>
+<br>
 
 # Discussion 
 
@@ -74,11 +78,17 @@ Social engineering awareness training focusing on phishing and spear phishing is
 A literature review was carried out in three papers on the use of social engineering techniques in phishing. Research by Lawson et al. (2020) and Butavicius et al. (2015) shows that extroverted personalities are more susceptible to phishing, as well as people with low impulse control. Although Lawson et al. research found that the persuasion principle of 'liking' was most effective in tricking users into clicking hyperlinks, Butavicius et al. found that not using a persuasion principle and making a phishing email look inconspicuous is even more effective. All three papers in the review cited that phishing awareness training was effective in mitigating the risk of a person falling victim to a phishing attack, and future research in this area was suggested. 
 
 # References
-Butavicius, M., Parsons, K., Pattinson, M., & McCormac, A. (2015). Breaching the Human Firewall: Social engineering in Phishing and Spear-Phishing Emails. Australasian Conference on Information Systems, Adelaide, South Australia. https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails
-Canfield, C. I., Fischhoff, B., & Davis, A. (2016). Quantifying Phishing Susceptibility for Detection and Behavior Decisions. Human Factors: The Journal of the Human Factors and Ergonomics Society, 58(8), 1158–1172. https://doi.org/10.1177/0018720816665025
-Cialdini, R. B. (1987). Influence: The Psychology of Persuasion. Harper Business.
-Costa, P. T., & McCrae, R. T. (1992). Neo PI-R Professional Manual. SAGE Publications. http://refhub.elsevier.com/S0003-6870(20)30047-8/sref7
-Lawson, P., Pearson, C. J., Crowson, A., & Mayhorn, C. B. (2020). Email phishing and signal detection: How persuasion principles and personality influence response patterns and accuracy. Applied Ergonomics, 86, 103084. https://doi.org/10.1016/j.apergo.2020.103084
-Lohani, S. (2019). Social Engineering: Hacking into Humans. International Journal Of Advanced Studies Of Scientific Research (IJASSR), 4(1), 385–393. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3329391#
+Butavicius, M., Parsons, K., Pattinson, M., & McCormac, A. (2015). Breaching the Human Firewall: Social engineering in Phishing and Spear-Phishing Emails. _Australasian Conference on Information Systems, Adelaide, South Australia._ https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails
+
+Canfield, C. I., Fischhoff, B., & Davis, A. (2016). Quantifying Phishing Susceptibility for Detection and Behavior Decisions. Human Factors: _The Journal of the Human Factors and Ergonomics Society, 58(8), 1158–1172._ https://doi.org/10.1177/0018720816665025
+
+Cialdini, R. B. (1987). _Influence: The Psychology of Persuasion. Harper Business._
+Costa, P. T., & McCrae, R. T. (1992). _Neo PI-R Professional Manual. SAGE Publications._ http://refhub.elsevier.com/S0003-6870(20)30047-8/sref7
+
+Lawson, P., Pearson, C. J., Crowson, A., & Mayhorn, C. B. (2020). Email phishing and signal detection: How persuasion principles and personality influence response patterns and accuracy. _Applied Ergonomics, 86, 103084._ https://doi.org/10.1016/j.apergo.2020.103084
+
+Lohani, S. (2019). Social Engineering: Hacking into Humans. _International Journal Of Advanced Studies Of Scientific Research (IJASSR), 4(1), 385–393._ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3329391#
+
 NIST. (1996, September). Generally Accepted Principles and Practices for Securing Information Technology Systems. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=890092
-Szathmari, G. (2018, October 14). Five Ways to Identify Phishing Emails. Iron Bastion Security Blog. https://blog.ironbastion.com.au/five-ways-to-detect-phishing-emails/
+
+Szathmari, G. (2018, October 14). Five Ways to Identify Phishing Emails. _Iron Bastion Security Blog._ https://blog.ironbastion.com.au/five-ways-to-detect-phishing-emails/
