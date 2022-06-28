@@ -3,23 +3,23 @@ published: true
 
 layout: post
 
-title: A Literature Review of Social Engineering Techniques used in Phishing
+title: A Literature Review of Social Engineering Techniques Used in Phishing
 
 image: /images/setyaki-irham-unsplash-1.jpg
 
 categories: [Social Engineering ,Phishing, Cybersecurity]
 ---
 
-_Three recent research papers on the use of social engineering techniques in phishing were reviewed. The papers were evaluated for their strengths and weaknesses and their usefulness in a business context and recommendations ._
+_Three recent research papers on the social engineering techniques and their effectiveness in phishing are reviewed. The main ideas are summarised, strengths, weaknesses and usefulness of the research in a business context are discussed ._
 
-![VR soldier]({{ site.baseurl }}/images/setyaki-irham-unsplash-1.jpg "Phishing and social engineering") 
+![hacker in a hoodie walking down the street]({{ site.baseurl }}/images/setyaki-irham-unsplash-1.jpg "Phishing and social engineering") 
   
 _Photo by [Setyaki Irham](https://unsplash.com/@setyaki){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/hacking){:target="_blank"}_   
 
 # Introduction
-Three recent research papers on the use of social engineering techniques in phishing were reviewed. Two of them evaluate the effectiveness of social engineering persuasion techniques used in phishing. The third paper investigates a broader range of hacking techniques that use social engineering. 
-The papers were evaluated for their strengths and weaknesses and their usefulness in a business context. If you are interested in what the structure of an annotated bibliography should look like, then have a read of [What is an annotated bibliography?](https://students.unimelb.edu.au/academic-skills/explore-our-resources/referencing/writing-an-annotated-bibliography#what%20is%20an%20annotated%20bibliography){:target="_blank"}
-This work was submitted as part of a research report for the [Dark Web subject (ITC578)](https://www.csu.edu.au/handbook/handbook19/subjects/ITC578.html) at [Charles Sturt University](https://www.csu.edu.au/){:target="_blank"}.
+This report shall review three recent research papers on the use of social engineering techniques in phishing. Two of the papers evaluate the effectiveness of social engineering persuasion techniques used in phishing. The third paper investigates a broader range of hacking techniques that use social engineering. 
+The papers were evaluated for their strengths and weaknesses and their usefulness in a business context. The format of an annotated bibliography is used for this review. If you are interested in what the structure of an annotated bibliography should look like, then have a read of [What is an annotated bibliography?](https://students.unimelb.edu.au/academic-skills/explore-our-resources/referencing/writing-an-annotated-bibliography#what%20is%20an%20annotated%20bibliography){:target="_blank"}
+This report is based on an assignment which was submitted for the [Dark Web subject (ITC578)](https://www.csu.edu.au/handbook/handbook19/subjects/ITC578.html) at [Charles Sturt University](https://www.csu.edu.au/){:target="_blank"}.
 
 
 # Review
