@@ -17,7 +17,7 @@ _This post describes my experience preparing for and passing the Microsoft Cyber
 
 
 # Exam Background
-The Microsoft Cybersecurity Architect certification is the latest addition to Microsoft's role-based certifications for Azure. It's an architect exam, meaning it covers a lot of products and features but without a lot of depth. To gain the certification, you must have completed one of the following four cloud certifications that cover security aspects of Azure or Microsoft 365.  They are: [SC-200](https://docs.microsoft.com/en-us/certifications/exams/sc-200){:target="_blank"} , [SC-300](https://docs.microsoft.com/en-us/certifications/exams/sc-300){:target="_blank"}, [MS-500](){:target="_blank"} or [AZ-500](){:target="_blank"}
+The Microsoft Cybersecurity Architect certification is the latest addition to Microsoft's role-based certifications for Azure. It's an architect exam, meaning it covers a lot of products and features but without a lot of depth. To gain the certification, you must have completed one of the following four cloud certifications that cover security aspects of Azure or Microsoft 365.  They are: [SC-200](https://docs.microsoft.com/en-us/certifications/exams/sc-200){:target="_blank"} , [SC-300](https://docs.microsoft.com/en-us/certifications/exams/sc-300){:target="_blank"}, [MS-500](){:target="_blank"} or [AZ-500](){:target="_blank"}.
 
 The SC-100 exam recently (July 2022) came out of beta. What this means is that if you are lucky enough to work for an organization that has access to the [Microsoft Enterprise Skills Initiative](https://esi.microsoft.com/){:target="_blank"} program, you can sit the exam for free. 
 
