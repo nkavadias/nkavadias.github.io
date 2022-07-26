@@ -42,10 +42,10 @@ The only resource I used for this exam was [John Savill's SC-100 cram video](htt
 
 John's opinion of the exam is that it's quite basic. The exam length is 120 minutes. John speedran the exam and said it took him 30 minutes to complete it.  I took a similar approach and finished it in 40 minutes, scoring  748/1000 (see my exam report below). Even for the case study questions, you can take an educated guess what the answer is, without reading the case study.  
 
-![Microsoft Certification exam report]({{ site.baseurl }}/images/sc-100-score-report-1.PNG "SC-100 exam report") 
+![Microsoft Certification exam report]({{ site.baseurl }}/images/sc-100-score-report-1.png "SC-100 exam report") 
 _My exam report result_   
 
 
-[I've provided a copy of my notes here](/assets/html/sc-100-notes.md){:target="_blank"}.
+[I've provided a copy of my notes here](/assets/html/sc-100-notes.html){:target="_blank"}.
 
 Goodluck!!
