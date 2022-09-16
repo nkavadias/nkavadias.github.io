@@ -10,13 +10,14 @@ image: /images/adi-goldstein1.jpg
 categories: [DFIR, Cybersecurity]
 --- 
 
-_This report discusses future developments and challenges in evidence recovery for digital forensics. The exponential growth in volumes of data, the increase in Internet of Things (IoT) devices and the ubiquity of encryption all pose challenges to the digital forensics practitioner. This report discusses new techniques and technology developed to overcome these issues and how the Australian and US governments have responded to these challenges by introducing new laws._
+_This report discusses future developments and challenges in evidence recovery for digital forensics and new laws, techniques and technology developed to overcome these issues._
 
 
 ![DFIR cybersecurity digital forensics]({{ site.baseurl }}/images/adi-goldstein1.jpg "Future of Evidence Recovery for Digital Forensics") 
 _Photo by [Adi Goldstein](https://unsplash.com/@adigold1){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/hacking){:target="_blank"}_   
 
-
+# Introduction
+This report discusses future developments and challenges in evidence recovery for digital forensics. The exponential growth in volumes of data, the increase in Internet of Things (IoT) devices and the ubiquity of encryption all pose challenges to the digital forensics practitioner. It also discusses new techniques and technology developed to overcome these issues and how the Australian and US governments have responded to these challenges by introducing new laws.
 
 # Growth in data volumes
 The increasing data capacities held by suspects are creating problems for forensic investigations. Currently (August 2022), the largest hard drive capacity for a personal computer is 20 terabyte (TB), with [Seagate having plans for a 30 TB HDD in 2023](https://www.extremetech.com/computing/338238-seagate-to-launch-30tb-hard-drives-in-2023){:target="_blank"}. Growth rate predictions for computer hard drives are estimated at 30% per year, meaning consumers will have access to hard drives above 70 TB in the next five years [(Evans, 2019)](https://www.architecting.it/blog/dude-wheres-my-100tb-hard-drive/){:target="_blank"}. Although drive capacities are increasing, disk throughput is not. According to Novak et al. [(2019)](https://www.ojp.gov/pdffiles1/nij/250700.pdf){:target="_blank"}, physical acquisition of a 1TB drive can take 11 hours, creating significant delays for time-critical law enforcement investigations and creating investigation backlogs. Researchers are investigating new techniques for speeding up acquisition and analysis. Sifting collectors and using public cloud compute clusters are two methods of helping solve the data volume growth problem.
@@ -34,7 +35,7 @@ Whilst not only useful for IoT, but for any data stored in the cloud, US legisla
 # Ubiquity of Encryption 
 Another problem for future forensic investigations is strong encryption on devices, which can prevent forensic analysis, especially for mobile technology, where both the latest iOS and Android operating systems encrypt filesystems by default [(Nield, 2020)](https://www.wired.com/story/smartphone-encryption-apps/){:target="_blank"}. Although there are ever-increasing sophisticated ways to use unpatched exploits to break into devices using tools created by vendors such as [Cellebrite](https://cellebrite.com){:target="_blank"}, in the future, there may be other ways to break disk encryption on devices by using quantum computing. [Nashilov (2020)]( https://www.kaspersky.com/blog/quantum-computing-vs-data-encryption/36301/){:target="_blank"} speculates that although AES-256 may be quantum-resistant, most symmetric ciphers are not. Although in practical terms, this would remain out of reach for most practitioners and be expensive, it would be reserved for national-security level investigations. It means that in current cases where investigators have been unable to break encryption by existing means, the data will be crackable in future. 
 
-
+# Conclusion
 This report discussed new techniques in physical data acquisition and data analysis in digital forensics. For example, sifting collectors can improve acquisition speed by up to fourteen times while still finding 95% of evidence compared to traditional p techniques. The report also discussed the use of cloud computing to accelerate the speed of analysis using an open-source forensic compute cluster called DFORC2 and how AI techniques for automating parts of the forensic process can also be used to speed up investigations. There was also discussion regarding the challenges of IoT and data stored in cloud servers across the world being inaccessible to law enforcement and how the US government has helped solve the issue by introducing the [CLOUD Act](https://en.wikipedia.org/wiki/CLOUD_Act){:target="_blank"}. This section also discussed the problem of the ubiquity of encryption and how quantum computing may be able to crack symmetric encryption in the future. 
 
 
