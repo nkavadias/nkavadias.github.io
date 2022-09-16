@@ -1,11 +1,10 @@
 ---
 layout: page
-title: About
+title: About This Blog
 permalink: /about/
 published: true
 ---
 
-## About this blog
 
 I've been working in technology for almost 20 years. During the start of the pandemic in 2020, I went back to university to study a [Master of Cybersecurity](https://itmasters.edu.au/course/master-of-cyber-security/){:target="_blank"} through [IT Masters](https://itmasters.edu.au/){:target="_blank"} for fun. I thought a blog might be a useful forum to share some of my essays, notes and other learning experiences. 
 
