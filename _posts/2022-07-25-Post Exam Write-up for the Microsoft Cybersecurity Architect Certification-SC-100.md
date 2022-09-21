@@ -8,6 +8,10 @@ title: Post Exam Write-up for the Microsoft Cybersecurity Architect Certificatio
 image: /images/ms-cyber-security-architect-expert-sc-100.png
 
 categories: [Certification, Cybersecurity, Azure]
+
+redirect_from:
+ - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-
+ - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)
 --- 
 
 _This post describes my experience preparing for and passing the Microsoft Cybersecurity Architect certification exam (SC-100). I’ll describe some background about the exam and the resources I used, I'll also provide my notes._
