@@ -11,7 +11,9 @@ categories: [Certification, Cybersecurity, Azure]
 
 redirect_from:
  - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-
- - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)
+ - https://blog.kavadias.net/Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)
+ - https://blog.kavadias.net/Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)/
+
 --- 
 
 _This post describes my experience preparing for and passing the Microsoft Cybersecurity Architect certification exam (SC-100). I’ll describe some background about the exam and the resources I used, I'll also provide my notes._

@@ -81,7 +81,8 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-redirect-from #for doing page redirections
+  - jekyll-redirect-from
+  
 include: ['_pages']
 
 paginate: 5
