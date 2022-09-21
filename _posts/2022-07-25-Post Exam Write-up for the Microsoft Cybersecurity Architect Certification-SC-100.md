@@ -11,8 +11,8 @@ categories: [Certification, Cybersecurity, Azure]
 
 redirect_from:
  - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-
- - https://blog.kavadias.net/Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)
- - https://blog.kavadias.net/Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)/
+ - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)
+ - /Post-Exam-Write-up-for-the-Microsoft-Cybersecurity-Architect-Certification-(SC-100)/
 
 --- 
 
