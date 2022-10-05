@@ -32,6 +32,10 @@ The results confirmed previous research findings that high extroversion levels c
 
 ## Evaluation of Strengths and Weaknesses
 The research confirmed previous findings regarding personality traits and susceptibility to phishing and new findings relating to which personalities are more susceptible to persuasion techniques. Although the researchers performed a literature review of other research related to phishing susceptibility, which showed factors such as age and participation and that phishing identification training played a part in phishing susceptibility, these factors were not considered in the research. The research also failed to consider or try to simulate real-world phishing where users can inspect email hyperlinks or email headers such as the name and email address of the sender.  
+
+## Usefulness 
+The research is useful to organisations that wish to train users on how to avoid phishing attacks. Trainers can focus on persuasion techniques that are most effective and on personalities that are most susceptible. 
+
 <br>
 ### Butavicius, M., Parsons, K., Pattinson, M., & McCormac, A. (2015). Breaching the Human Firewall: Social engineering in Phishing and Spear-Phishing Emails. [_Australasian Conference on Information Systems, Adelaide, South Australia._](https://www.researchgate.net/publication/303812216_Breaching_the_Human_Firewall_Social_engineering_in_Phishing_and_Spear-Phishing_Emails){:target="_blank"}
 
@@ -55,7 +59,6 @@ The paper provides high-level details of how phishing techniques work and how th
 The paper is useful in explaining how threat actors carry out social engineering attacks in a non-technical way that would appeal to a broad audience. Although the advice for mitigation is generic, it offers one good piece of advice: to increase awareness of social engineering attacks through education. 
 <br>
 # Discussion 
-
 ## Important Issues not addressed in the literature 
 
 Research by Lawson et al. (2020) and Butavicius et al. (2015) highlight how a person's personality and the use of social engineering persuasion techniques in phishing can trick users into clicking hyperlinks unsafely. Both studies highlight how phishing awareness training can help prevent users from falling victim to phishing. In the discussion of Butavicius et al. (2015), there is a suggestion that cognitive impulsivity training aimed at making users more vigilant could improve outcomes. Lohani (2019) lists awareness training as a mitigation strategy for social engineering attacks. In the literature review conducted, no research attempted to measure how effective different kinds of awareness training would be against phishing attacks or how people with different personalities may respond to phishing awareness training. A possible future study could be to have participants respond to phishing emails before and after different kinds of training to gauge which training techniques are most effective against which kinds of users at improving a users awareness of phishing in a simulated or real-world phishing scenario. 
