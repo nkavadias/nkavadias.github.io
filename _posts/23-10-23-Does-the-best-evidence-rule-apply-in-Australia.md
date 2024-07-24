@@ -13,7 +13,7 @@ _Discussion of the relevance of the best evidence rule in the Australian legal c
 ![digital gavel]({{ site.baseurl }}/images/conny-schneider-3hkKv6WzjcE-unsplash.jpg "Cyberwarfare and Cyberterrorism") 
 _Photo by [Conny Schneider](https://unsplash.com/@choys_)_   
 
-## Introduction
+#### Introduction
 
 Digital forensics is the science of collecting, preserving, analysing, and presenting digital evidence in a court of law. Many cybersecurity certifications (CISSP, CISM, CCE, GCFE) cover the importance of the “best evidence rule” in the collection of digital evidence. This blog post provides some perspective for Australian practitioners and insights into how the rules of evidence differ compared to the United States, and why if evidence has not been collected in the "best" of circumstances it may still be admissible in an Australian courtroom. 
 
