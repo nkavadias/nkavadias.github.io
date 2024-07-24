@@ -31,7 +31,7 @@ Digital forensics experts in the United States face the challenge of proving tha
 
 #### Australia: The Statutory Approach
 
-In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced uniform evidence legislation, which harmonises and codifies the evidence laws across federal and state jurisdictions. Section 147 of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document (including digital evidence) produced by a machine (e.g., a photocopier) is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing buren on party challenging the evidence to prove that it has been altered.
+In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced uniform evidence legislation, which harmonises and codifies the evidence laws across federal and state jurisdictions. Section 147 of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document (including digital evidence) produced by a machine (e.g., a photocopier) is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing the burden on party challenging the evidence to prove that it has been altered.
 
 #### Implications for Digital Forensics in Australia
 
