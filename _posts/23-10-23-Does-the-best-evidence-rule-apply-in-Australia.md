@@ -19,7 +19,7 @@ Digital forensics is the science of collecting, preserving, analysing, and prese
 
 #### The Best Evidence Rule
 
-The best evidence rule is a common law principle that dates back to 18th Century Enland in a case called [Omychund v Barker (1745) 26 ER 15](https://vlex.co.uk/vid/omychund-v-barker-804436045). Lord Harwicke stated that no evidence was admissible unless it was the _"best nature will allow"_. Later cases use this [obiter](https://en.wikipedia.org/wiki/Obiter_dictum) to mean that only originals were admissible as evidence. This rule applied to documents, which, back then, were copied by hand, a process with a significant chance of introducing error or fraud.
+The best evidence rule is a common law principle that dates back to 18th Century England in a case called [Omychund v Barker (1745) 26 ER 15](https://vlex.co.uk/vid/omychund-v-barker-804436045). Lord Harwicke stated that no evidence was admissible unless it was the _"best nature will allow"_. Later cases use this [obiter](https://en.wikipedia.org/wiki/Obiter_dictum) to mean that only originals were admissible as evidence. This rule applied to documents, which, back then, were copied by hand, a process with a significant chance of introducing error or fraud.
 
 #### The United States: The Common Law Approach
 
