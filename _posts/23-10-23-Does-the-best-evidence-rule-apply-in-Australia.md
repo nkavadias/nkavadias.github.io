@@ -36,5 +36,5 @@ In contrast, Australia has largely abolished the best evidence rule through legi
 #### Implications for Digital Forensics in Australia
 
 In Australia, while the abolition of the best evidence rule simplifies the admissibility of digital evidence, forensic experts still need to ensure that their evidence handling and presentation meet the standards of relevance and reliability. The reverse burden of proof under section 147 of the Evidence Act 1995 _(Cth)_ means that the defence must provide credible evidence to challenge the presumption of the accuracy of digital copies.  
-In my opinion, this doesn't mean you can stop paying for EnCase and use robocopy instead; rather, it means if there are circumstances where evidence was copied in less than ideal circumtances, but it is important to a case it may still be valid in an Australian court.
+In my opinion, this doesn't mean you can stop paying for EnCase and use [Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) instead; rather, it means if there are situations where evidence was copied in less than ideal circumtances, do not lose hope, it may still be valid in an Australian courtroom.
 
