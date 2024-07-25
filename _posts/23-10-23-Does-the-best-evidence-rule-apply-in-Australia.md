@@ -3,7 +3,7 @@ published: true
 
 layout: post
 
-title: Does the "Best Evidence" rule apply in Australia?
+title: Does the _Best Evidence_ rule apply in Australia?
 
 image: /images/conny-schneider-3hkKv6WzjcE-unsplash.jpg
 
