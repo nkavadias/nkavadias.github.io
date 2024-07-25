@@ -5,7 +5,7 @@ layout: post
 
 title: Does the 'Best Evidence' rule apply in Australia?
 
-image: /images/conny-schneider-3hkKv6WzjcE-unsplash.jpg
+image: /images/conny-schneider-unsplash.jpg
 
 categories: [DFIR, Cybersecurity, Certification, Legal]
 
@@ -13,8 +13,8 @@ categories: [DFIR, Cybersecurity, Certification, Legal]
 
 _Discussion of the relevance of the best evidence rule in the Australian legal context for digital evidence._
 
-![digital gavel]({{ site.baseurl }}/images/conny-schneider-3hkKv6WzjcE-unsplash.jpg "Cyberwarfare and Cyberterrorism") 
-_Photo by [Conny Schneider](https://unsplash.com/@choys_)_   
+![digital gavel]({{ site.baseurl }}/images/conny-schneider-unsplash.jpg "Cyberwarfare and Cyberterrorism") 
+_Photo by [Conny Schneider](https://unsplash.com/@choys_){:target="_blank"}_   
 
 #### Introduction
 
@@ -22,7 +22,7 @@ Digital forensics is the science of collecting, preserving, analysing, and prese
 
 #### The Best Evidence Rule
 
-The best evidence rule is a common law principle that dates back to 18th Century England in a case called [Omychund v Barker (1745) 26 ER 15](https://vlex.co.uk/vid/omychund-v-barker-804436045). Lord Harwicke stated that no evidence was admissible unless it was the _"best nature will allow"_. Later cases use this [obiter](https://en.wikipedia.org/wiki/Obiter_dictum) to mean that only originals were admissible as evidence. This rule applied to documents, which, back then, were copied by hand, a process with a significant chance of introducing error or fraud.
+The best evidence rule is a common law principle that dates back to 18th Century England in a case called [Omychund v Barker (1745) 26 ER 15](https://vlex.co.uk/vid/omychund-v-barker-804436045){:target="_blank"}. Lord Harwicke stated that no evidence was admissible unless it was the _"best nature will allow"_. Later cases use this [obiter](https://en.wikipedia.org/wiki/Obiter_dictum){:target="_blank"} to mean that only originals were admissible as evidence. This rule applied to documents, which, back then, were copied by hand, a process with a significant chance of introducing error or fraud.
 
 #### The United States: The Common Law Approach
 
@@ -34,10 +34,10 @@ Digital forensics experts in the United States face the challenge of proving tha
 
 #### Australia: The Statutory Approach
 
-In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced [uniform evidence legislation](https://austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/ea199580/), which harmonises and codifies the evidence laws across federal and state jurisdictions. [Section 147](https://austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_act/ea199580/s147.html) of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document, which includes digital evidence, produced by a machine e.g., a photocopier is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing the burden on the party challenging the evidence to prove that it has been altered.
+In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced [uniform evidence legislation](https://austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/ea199580/){:target="_blank"}, which harmonises and codifies the evidence laws across federal and state jurisdictions. [Section 147](https://austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_act/ea199580/s147.html){:target="_blank"} of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document, which includes digital evidence, produced by a machine e.g., a photocopier is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing the burden on the party challenging the evidence to prove that it has been altered.
 
 #### Implications for Digital Forensics in Australia
 
 In Australia, while the abolition of the best evidence rule simplifies the admissibility of digital evidence, forensic experts still need to ensure that their evidence handling and presentation meet the standards of relevance and reliability. The reverse burden of proof under section 147 of the Evidence Act 1995 _(Cth)_ means that the defence must provide credible evidence to challenge the presumption of the accuracy of digital copies.  
-In my opinion, this doesn't mean you can stop paying for EnCase and use [Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) instead; rather, it means if there are situations where evidence was copied in less than ideal circumtances, do not lose hope, it may still be valid in an Australian courtroom.
+In my opinion, this doesn't mean you can stop paying for EnCase and use [Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy){:target="_blank"} instead; rather, it means if there are situations where evidence was copied in less than ideal circumtances, do not lose hope, it may still be valid in an Australian courtroom.
 
