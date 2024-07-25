@@ -6,6 +6,9 @@ layout: post
 title: Does the "Best Evidence" rule apply in Australia?
 
 image: /images/conny-schneider-3hkKv6WzjcE-unsplash.jpg
+
+categories: [DFIR, Cybersecurity, Certification, Legal]
+
 ---
 
 _Discussion of the relevance of the best evidence rule in the Australian legal context for digital evidence._
@@ -31,7 +34,7 @@ Digital forensics experts in the United States face the challenge of proving tha
 
 #### Australia: The Statutory Approach
 
-In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced uniform evidence legislation, which harmonises and codifies the evidence laws across federal and state jurisdictions. Section 147 of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document (including digital evidence) produced by a machine (e.g., a photocopier) is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing the burden on party challenging the evidence to prove that it has been altered.
+In contrast, Australia has largely abolished the best evidence rule through legislation. Most Australian jurisdictions have introduced [uniform evidence legislation](https://austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/ea199580/), which harmonises and codifies the evidence laws across federal and state jurisdictions. [Section 147](https://austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_act/ea199580/s147.html) of the Evidence Act 1995 _(Cth)_ exemplifies this. It specifies that a document, which includes digital evidence, produced by a machine e.g., a photocopier is presumed to be the same as the original unless there is _"evidence sufficient to raise doubt about the presumption."_ This essentially reverses the burden of proof found in the common law, placing the burden on the party challenging the evidence to prove that it has been altered.
 
 #### Implications for Digital Forensics in Australia
 
