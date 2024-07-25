@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 
 layout: post
 
 title: MXMaven: A tool to identify poorly configured DNS records for mail servers
 
-image: /images/conny-schneider-3hkKv6WzjcE-unsplash.jpg
+image: /images/jeremy-cai-B8UTPKlHNyw-unsplash.jpg
 
 categories: [Phishing, Cybersecurity, Code, ]
 
@@ -13,7 +13,7 @@ categories: [Phishing, Cybersecurity, Code, ]
 
 _A python tool I wrote for scanning DNS records for mail servers that helps organisations prevent domain impersonation attacks in phishing._
 
-![digital gavel]({{ site.baseurl }}/images/conny-schneider-3hkKv6WzjcE-unsplash.jpg "Cyberwarfare and Cyberterrorism") 
+![digital gavel]({{ site.baseurl }}/images/jeremy-cai-B8UTPKlHNyw-unsplash "Cyberwarfare and Cyberterrorism") 
 _Photo by [Conny Schneider](https://unsplash.com/@choys_)_   
 
 
@@ -59,30 +59,5 @@ According to [RFC 1035 section 2.3.4](https://datatracker.ietf.org/doc/html/rfc1
 There are reports that Google and Microsoft may obey SPF records that exceed 255 characters. However, it is not recommended and Google's own documentation states that and exceeding this character limit can cause authentication failure and lead to email delivery issues.
 The MXMaven report will indicate is TXT_length_OK for each domain SPF/DMARC record and the result check is stored on the SPFRecord and DMARCRecord tables.
 
-## Tool Capabilities
-
-MX Maven can check a single domain using the -s parameter.  Although, it has a more power option of accepting a text file with a domain on each line with the -m parameter.  All DNS record lookups are stored in a relation database, this defaults to SQLite3, but can be easily reconfigured to use MySQL, PosgresSQL and CockroachDB, as it uses the Peewee Python ORM library.
-
-
-MXMaven has three options to run the tool. The first option is `-s` or `--single`, which checks a single domain. The second option is `-m` or `--multidomain`, which accepts a text file with a domain on each line. The third option is `-a` or `--showall`, which prints a report of all stored records. The tool stores all DNS record lookups in a relation database, which defaults to SQLite3. However, it can be easily reconfigured to use MySQL, PosgresSQL, and CockroachDB, as it uses the Peewee Python ORM library.
-
-Here are the details of the options:
-
-| **Option** | **Description**                                                                  |
-|------------|-----------------                                                                 |
-| `-h`, `--help` | Shows the help message and exits.                                            |
-| `-s DOMAIN_NAME`, `--single DOMAIN_NAME` | Runs the tool in single domain mode.                |
-| `-m DOMAIN_NAME_LIST.TXT`, `--multidomain DOMAIN_NAME_LIST.TXT` | Runs the tool in multiple domain mode. Accepts a text file with a domain on each line. |
-| `-a`, `--showall` | Prints a report of all stored records. |
-| `-v`, `--verbose` | Increases output verbosity. |
-| `-d SQLITE3_DB_FILE.DB`, `--sqlitedb SQLITE3_DB_FILE.DB` | Uses an alternative Sqlitedb. The default is mxmaven.db. |
-
-
-## Project TODOs
-- implement multiprocessing or multithreading for DNS lookups.
-- Do additional checks to identify dangling MX records such records which point to domains no longer registered or parked, or public cloud hostnames which are not responding (may be possible for takeover?)
-- inspect authorized hosts in SPF which are too broad and could allow any sending from a third party to impersonate domain (e.g. generic SendGrid hosts, or large IP ranges).
-- additional tool parameter to allow easy export to csv, JSON of table records from SQLite.
-- record and save TLS certificates for mail servers that support secure transport.
 
 [1]:[Reed, J.A. and Reed, J.C., 2020. Potential Email Compromise via Dangling DNS MX.](https://www.dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf)
