@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 
 layout: post
 
@@ -11,16 +11,17 @@ categories: [Phishing, Cybersecurity, Code, ]
 
 ---
 
-_A python tool I wrote for scanning DNS mail records that helps organisations prevent domain impersonation attacks in phishing._
+_I wrote a small tool in python for scanning DNS mail records that can helps organisations prevent domain impersonation attacks in phishing._
 
 ![digital gavel]({{ site.baseurl }}/images/jeremy-cai-unsplash "help organisations protect their mailservers from impersonation attacks used in phishing") 
 _Photo by [Conny Schneider](https://unsplash.com/@choys_)_   
 
 
 
-#  Why MXMaven?
-#### Description:
-Large organisations can have hundreds of domains. A threat actor may use a single misconfiguration in one of these domains to their advantage. MXMaven can identify poorly or misconfigured MX, SPF and DMARC records in DNS that may leave a domain susceptible to domain impersonation attacks (i.e. using your domain identity to send phishing emails to victims impersonating your organisation.) MXMaven will also find MX records that do not resolve, which could lead to mail delivery issues or, worse, be a dangling DNS record that could be vulnerable to take-over[^1]. MX Maven can detect SPF and DMARC records that do not comply with RFC standards for strings longer than 255 characters in TXT records. This issue can cause mail services to ignore long SPF and DMARC records. MX Maven will store all DNS lookups for MX, SPF and DMARC in a SQLite database and will provide a report after scanning to highlight poorly configured SPF and DMARC policies or MX resolution issues.
+###  Why MXMaven?
+Large organisations can have hundreds of domains. A threat actor may use a single misconfiguration in one of these domains to their advantage. MXMaven can quickly identify poorly or misconfigured MX, SPF and DMARC records in DNS that may leave a domain susceptible to domain impersonation attacks (i.e. using your domain identity to send phishing emails to victims impersonating your organisation.) MXMaven will also find MX records that do not resolve, which could lead to mail delivery issues or, worse, be a dangling DNS record that could be vulnerable to take-over[^1]. MX Maven can detect SPF and DMARC records that do not comply with RFC standards for strings longer than 255 characters in TXT records. This issue can cause mail services to ignore long SPF and DMARC records. MX Maven will store all DNS lookups for MX, SPF and DMARC in a SQLite database and will provide a report after scanning to highlight poorly configured SPF and DMARC policies or MX resolution issues.
+
+### For details on how to install, and get started using MXMaven, visit the Github repo [https://github.com/nkavadias/mxmaven]  (https://github.com/nkavadias/mxmaven)
 
 ### What is a SPF Record?
 
