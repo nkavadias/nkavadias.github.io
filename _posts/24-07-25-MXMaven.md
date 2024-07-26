@@ -10,8 +10,8 @@ image: /images/jeremy-cai-unsplash.jpg
 categories: [Phishing, Cybersecurity, Code, ]
 
 ---
+_I wrote a tool in Python for scanning DNS mail records. This tool helps organisations identify misconfigurations in MX, SPF, and DMARC records that can help prevent domain impersonation attacks, commonly used in phishing attacks._
 
-_I wrote a small tool in python for scanning DNS mail records that can help organisations prevent domain impersonation attacks commonly used in phishing attacks._
 
 ![koi fish]({{ site.baseurl }}/images/jeremy-cai-unsplash.jpg "help organisations protect their mail servers from impersonation attacks used in phishing") 
 _Photo by [Jeremy Cai](https://unsplash.com/@j)_   
