@@ -26,7 +26,7 @@ Large organisations often manage hundreds of domains. A single misconfiguration 
 
 MXMaven quickly identifies poorly or misconfigured MX, SPF, and DMARC records in DNS, which can leave a domain susceptible to domain impersonation attacks. It also detects MX records that do not resolve, potentially causing mail delivery issues or even leaving dangling DNS records vulnerable to take-over[^1]. Furthermore, MXMaven checks SPF and DMARC records for compliance with RFC standards, ensuring they do not exceed the 255-character limit for TXT records, which can cause mail services to ignore them.
 
-MXMaven provides a terminal report highlighting poorly configured domains. By storing all the DNS results in a datastore it also means more sophisticated reports can be created, as well as tracking of historical DNS changes. 
+MXMaven provides a simple "traffic light" terminal report highlighting poorly configured domains. It also stores all the DNS results in a datastore (SQLLite by default) that means more sophisticated reports can be created, as well as the tracking of historical DNS changes. 
 
 ### How to Get Started
 
@@ -45,7 +45,7 @@ When an email reaches the receiving server, it looks up the SPF record to check 
 
 If the SPF record is not set, the server defaults to a neutral setting.
 
-MXMaven reports domains with no SPF policy, a neutral policy (warning), or a pass policy (bad) and stores the entire SPF record in the SPFRecord table.
+MXMaven reports domains with no SPF policy, a neutral policy (warning), or a pass policy (bad). 
 
 ## Understanding DMARC Records
 
@@ -57,12 +57,12 @@ A DMARC record, a DNS TXT record, defines the following policies:
 - **REJECT**: Rejects emails failing SPF and DKIM checks. Recommended for high-security domains.
 - **QUARANTINE**: Marks emails failing checks as suspicious, placing them in quarantine or spam.
 
-DMARC also supports reporting back to the domain owner about authentication results. MXMaven stores this part of the record in the DMARCRecord table.
+MXMaven reports on the DMARC policy. 
 
 ## 255-Character Limit on DNS TXT Strings
 
 According to [RFC 1035 section 2.3.4](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.4), a single DNS TXT record string cannot exceed 255 bytes. Longer records must be divided into multiple strings, each within the 255-byte limit. While some providers like Google and Microsoft may accept longer records, exceeding this limit can cause authentication failures and email delivery issues.
 
-MXMaven checks if TXT records comply with this limit and stores the results in the SPFRecord and DMARCRecord tables.
+MXMaven checks if TXT records comply with this limit.
 
 [^1]: [Reed, J.A. and Reed, J.C., 2020. Potential Email Compromise via Dangling DNS MX.](https://www.dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf)
