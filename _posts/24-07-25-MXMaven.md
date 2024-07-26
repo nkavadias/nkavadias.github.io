@@ -3,7 +3,7 @@ published: true
 
 layout: post
 
-title: Introducing MXMaven, A tool for identifing poorly configured mail server DNS records
+title: Introducing MXMaven, A tool for identifying poorly configured mail server DNS records
 
 image: /images/jeremy-cai-unsplash.jpg
 
@@ -14,51 +14,55 @@ categories: [Phishing, Cybersecurity, Code, ]
 _I wrote a small tool in python for scanning DNS mail records that can helps organisations prevent domain impersonation attacks in phishing._
 
 ![digital gavel]({{ site.baseurl }}/images/jeremy-cai-unsplash "help organisations protect their mailservers from impersonation attacks used in phishing") 
-_Photo by [Conny Schneider](https://unsplash.com/@choys_)_   
+_Photo by [Jeremy Cai](https://unsplash.com/@j)_   
 
 
 
-###  Why MXMaven?
-Large organisations can have hundreds of domains. A threat actor may use a single misconfiguration in one of these domains to their advantage. MXMaven can quickly identify poorly or misconfigured MX, SPF and DMARC records in DNS that may leave a domain susceptible to domain impersonation attacks (i.e. using your domain identity to send phishing emails to victims impersonating your organisation.) MXMaven will also find MX records that do not resolve, which could lead to mail delivery issues or, worse, be a dangling DNS record that could be vulnerable to take-over[^1]. MX Maven can detect SPF and DMARC records that do not comply with RFC standards for strings longer than 255 characters in TXT records. This issue can cause mail services to ignore long SPF and DMARC records. MX Maven will store all DNS lookups for MX, SPF and DMARC in a SQLite database and will provide a report after scanning to highlight poorly configured SPF and DMARC policies or MX resolution issues.
+# Introducing MXMaven: A Cybersecurity Tool to Secure Your Email Domains
 
-### For details on how to install, and get started using MXMaven, visit the Github repo [https://github.com/nkavadias/mxmaven]  (https://github.com/nkavadias/mxmaven)
+### Why MXMaven?
 
-### What is a SPF Record?
+Large organisations often manage hundreds of domains. A single misconfiguration in one of these domains can be a goldmine for threat actors. They can exploit these vulnerabilities to impersonate your domain, sending phishing emails that appear to come from your organisation. That's where MXMaven comes in. 
 
-SPF (Sender Policy Framework) records prevent spammers and phishers from sending emails with forged “From” addresses using your domain. An SPF record is a [DNS TXT record](https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/) that specifies a list of IP addresses or hostnames that are authorized to send emails on behalf of your domain. When an email reaches the receiving server, it will look up the DNS SPF record and check to determine if the email comes from an authorized IP address. The server will follow the policy set in the SPF record on how to handle an incoming email from an unauthorized IP.
+MXMaven quickly identifies poorly or misconfigured MX, SPF, and DMARC records in DNS, which can leave a domain susceptible to domain impersonation attacks. It also detects MX records that do not resolve, potentially causing mail delivery issues or even leaving dangling DNS records vulnerable to take-over[^1]. Furthermore, MXMaven checks SPF and DMARC records for compliance with RFC standards, ensuring they do not exceed the 255-character limit for TXT records, which can cause mail services to ignore them.
 
-Four types of SPF policies specify how receiving mail servers should handle emails that fail the SPF check :
+MXMaven provides a terminal report highlighting poorly configured domains. By storing all the DNS results in a datastore it also means more sophisticated reports can be created, as well as tracking of historical DNS changes. 
 
-- Hard Fail (-all): This is the strictest policy recommended for domains hosting business emails where a threat actor may seek to impersonate people in the organization. Any mail server sending email will be rejected unless it is on the authorized list of servers in the SPF record.
+### How to Get Started
 
-- Soft Fail (~all): If the email is not from an authorized server, the receiving mail server should mark the email as spam.
+For details on installation and usage, visit the [MXMaven GitHub repo](https://github.com/nkavadias/mxmaven).
 
-- Neutral (?all): The receiving mail server should not use the SPF record to verify the email. This policy is not recommended for business domains.
+## Understanding SPF Records
 
-- Pass (+all): The receiving mail server should pass the email even if the email is not from an authorized server. This is the weakest setting and is not recommended.
+SPF (Sender Policy Framework) records prevent spammers and phishers from sending emails with forged “From” addresses using your domain. An SPF record is a [DNS TXT record](https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/) that specifies which IP addresses or hostnames are authorised to send emails on behalf of your domain. 
 
-If the SPF record is not set, the receiving mail server will consider this the neutral setting.
+When an email reaches the receiving server, it looks up the SPF record to check if the email comes from an authorised source. Based on the SPF policy, the server decides how to handle emails from unauthorised sources:
 
-MXMaven will report on domains it finds where the SPF policy is not set, is set to neutral (as a warning, in yellow) and as bad (in red) if the policy is set to pass. MXMaven does not report rules for authorized servers but stores the entire SPF record in the SPFRecord table.
+- **Hard Fail (-all)**: Strictly rejects emails from unauthorised sources. Recommended for business domains.
+- **Soft Fail (~all)**: Marks emails from unauthorised sources as spam.
+- **Neutral (?all)**: Ignores the SPF check. Not recommended for business domains.
+- **Pass (+all)**: Accepts emails from any source. This weak setting is not recommended.
 
-## What is a DMARC Record?
-DMARC stands for Domain-based Message Authentication, Reporting, and Conformance. It is an additional method to SPF used for authenticating email messages. A DMARC policy tells a receiving email server what to do after checking a domain’s SPF and DKIM  records. DKIM is Domain Keys Identified Mail. It is an additional verification that relies on cryptographic keys embedded in email messages to verify the source mail server) records. MX Maven does not check DKIM records. To do so would require an email sent from the domain being checked.
+If the SPF record is not set, the server defaults to a neutral setting.
 
-A DMARC record is also a DNS TXT record that stores a domain’s DMARC policy. The DMARC policy instructs the receiving mail server on how to treat a message that fails SPF and DKIM verification. The policies are:
+MXMaven reports domains with no SPF policy, a neutral policy (warning), or a pass policy (bad) and stores the entire SPF record in the SPFRecord table.
 
-- NONE: If the email fails the SPF and DKIM checks, the receiving mail server will not take additional actions.
+## Understanding DMARC Records
 
-- REJECT: If the email fails the SPF and DKIM checks, the receiving mail server should reject the email. This is the strictest policy recommended for domains where a threat actor may seek to impersonate people in your organization.
+DMARC (Domain-based Message Authentication, Reporting, and Conformance) adds another layer of email authentication. A DMARC policy instructs the receiving server on handling emails that fail SPF and DKIM checks. DKIM (DomainKeys Identified Mail) uses cryptographic keys to verify email sources, but MXMaven does not check DKIM records as it requires sending an email from the domain.
 
-- QUARANTINE: If the email fails the SPF and DKIM checks, the receiving mail server should mark it as suspicious and quarantine the email or mark it as spam.
+A DMARC record, a DNS TXT record, defines the following policies:
 
-DMARC also enables reports to be sent back to the domain owner about messages authenticating. MX Maven does not report on this part of the record but stores it in the DMARCRecord table.
+- **NONE**: Takes no action on emails failing SPF and DKIM checks.
+- **REJECT**: Rejects emails failing SPF and DKIM checks. Recommended for high-security domains.
+- **QUARANTINE**: Marks emails failing checks as suspicious, placing them in quarantine or spam.
 
-## 255 char limit on DNS TXT strings
-According to [RFC 1035 section 2.3.4](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.4). A single string in a DNS TXT record cannot exceed 255 bytes, but a single record is allowed to contain multiple strings. For records longer than 255 bytes the record should be divided into 255 byte Strings with quotation mark (") and separate each Strings by space.
+DMARC also supports reporting back to the domain owner about authentication results. MXMaven stores this part of the record in the DMARCRecord table.
 
-There are reports that Google and Microsoft may obey SPF records that exceed 255 characters. However, it is not recommended and Google's own documentation states that and exceeding this character limit can cause authentication failure and lead to email delivery issues.
-The MXMaven report will indicate is TXT_length_OK for each domain SPF/DMARC record and the result check is stored on the SPFRecord and DMARCRecord tables.
+## 255-Character Limit on DNS TXT Strings
 
+According to [RFC 1035 section 2.3.4](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.4), a single DNS TXT record string cannot exceed 255 bytes. Longer records must be divided into multiple strings, each within the 255-byte limit. While some providers like Google and Microsoft may accept longer records, exceeding this limit can cause authentication failures and email delivery issues.
 
-[1]:[Reed, J.A. and Reed, J.C., 2020. Potential Email Compromise via Dangling DNS MX.](https://www.dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf)
+MXMaven checks if TXT records comply with this limit and stores the results in the SPFRecord and DMARCRecord tables.
+
+[^1]: [Reed, J.A. and Reed, J.C., 2020. Potential Email Compromise via Dangling DNS MX.](https://www.dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf)
