@@ -13,7 +13,7 @@ categories: [Phishing, Cybersecurity, Code, ]
 
 _I wrote a small tool in python for scanning DNS mail records that can helps organisations prevent domain impersonation attacks in phishing._
 
-![digital gavel]({{ site.baseurl }}/images/jeremy-cai-unsplash "help organisations protect their mailservers from impersonation attacks used in phishing") 
+![koi fish]({{ site.baseurl }}/images/jeremy-cai-unsplash.jpg "help organisations protect their mail servers from impersonation attacks used in phishing") 
 _Photo by [Jeremy Cai](https://unsplash.com/@j)_   
 
 
