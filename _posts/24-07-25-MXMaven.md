@@ -18,8 +18,6 @@ _Photo by [Jeremy Cai](https://unsplash.com/@j)_
 
 
 
-# Introducing MXMaven: A Cybersecurity Tool to Secure Your Email Domains
-
 ### Why MXMaven?
 
 Large organisations often manage hundreds of domains. A single misconfiguration in one of these domains can be a goldmine for threat actors. They can exploit these vulnerabilities to impersonate your domain, sending phishing emails that appear to come from your organisation. That's where MXMaven comes in. 
