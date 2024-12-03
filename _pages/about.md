@@ -5,7 +5,7 @@ permalink: /about-Nicholas-Kavadias/
 published: true
 ---
 
-Welcome to *Nick's Cybersecurity Blog*! This blog shares my insights, strategies, and reflections on technology, cybersecurity and law. Over the years I've gained [some qualification](https://https://www.linkedin.com/in/nicholas-kavadias/){:target="_blank"} in these areas and am particularly interested in the intersection of cybersecurity and law. 
+Welcome to *Nick's Cybersecurity Blog*! This blog shares my insights, strategies, and reflections on technology, cybersecurity and law. Over the years I've gained [a few qualifications](https://https://www.linkedin.com/in/nicholas-kavadias/){:target="_blank"} in these areas,  being particularly interested in the intersection of cybersecurity and law. 
 
 Many of my posts here are adapted from my academic writings or past projects.  Some posts retain elements like [APA 7th](https://libguides.library.usyd.edu.au/citation/apa7){:target="_blank"} referencing, although I've tailored them to be more engaging for online readers.
 
