@@ -29,7 +29,7 @@ The SC-100 exam recently (July 2022) came out of beta. What this means is that i
 
 # My Thoughts and Experience
 
-If you've previously passed the Azure Security Technologies exam (AZ-500), or are an Azure  Solutions Architect Expert (AZ-305), then SC-100 should be easy for you. It would also encourage you to have at least a high-level understanding of products and features such as:
+If you've previously passed the Azure Security Technologies exam (AZ-500), or are an Azure  Solutions Architect Expert (AZ-305), then SC-100 should be easy for you. I would also encourage you to have at least a high-level understanding of products and features such as:
 * Microsoft Purview
 * Defender for Cloud Apps
 * Azure Blueprint
