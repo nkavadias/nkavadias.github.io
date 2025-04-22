@@ -35,13 +35,11 @@ The LOLBAS Project defines a very narrow set of rules for what qualifies as a LO
 2. Possess **unexpected functionality** that threat actors can exploit, and;  
 3. Map to a **legitimate tactic or technique** in MITRE ATT&CK.
 
-A few years after LOLBAS took off, a similar project emerged for Unix-like systems: GTFOBins (Get the F** Out Binaries*). It was created in 2018 by security researchers [Andrea Cardaci](https://cardaci.xyz/) and [Emilio Pinna](https://x.com/norbemi), who were inspired by the idea of cataloguing legitimate binaries that could be abused for privilege escalation, command execution, and data exfiltration on Unix systems.
+A few years after LOLBAS took off, a similar project emerged for Unix-like systems: [GTFOBins](https://gtfobins.github.io/) (Get the F** Out Binaries*). It was created in 2018 by security researchers inspired by the idea of cataloguing legitimate binaries that could be abused for privilege escalation, command execution, and data exfiltration on Unix systems.
 
-Unlike LOLBAS, GTFOBins has a wider definition for a LOLBin. If a binary is already on a typical Unix machine and can help an attacker perform a task—no matter how obvious the functionality is, then it’s in scope.
+Unlike the LOLBAS Project, GTFOBins project has a wider definition for what they includ as a LOTL binary. If a binary is typical on Unix machine and can help an attacker perform a task to bypass security restictions or some other abuse by an attacker, no matter how obvious the functionality is, then it’s in scope.
 
-Each GTFOBin entry outlines how the tool can be used maliciously and is tagged into categories for abuse, with the entry reading a lot like a [man page](https://en.wikipedia.org/wiki/Man_page) for red teamers. 
-
-Here's a table which explains the differences between the projects:  
+Here's a table explaining the scope differences between the projects:  
 
 ### LOLBAS vs GTFOBins: A Quick Comparison
 
@@ -56,4 +54,9 @@ Here's a table which explains the differences between the projects:
 | Project URL                | [LOLBAS ](https://lolbas-project.github.io/)  | [GTFOBins](https://gtfobins.github.io/)                                     |
 
 
-But here’s where definitions can get muddy. It's common in malware to see the same built-in system tools used maliciously, even if it’s _expected_ behaviour. For example,  deleting [volume shadow copy](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service) backups via `vssadmin.exe` which almost all cryptolockers do before they start encrypting files. Most security researchers will lump that into being a LOTL, attack whether the functionality is "unexpected" or not, although strictly speaking by the LOLBAS project's definition vssadmin.exe isn't a LOLBin. 
+## LOTL: Blurred Lines in Practice
+While the LOLBAS and GTFOBins projects define clear inclusion criteria, the real-world application of LOTL concepts often blurs these lines. Many tools used by malware are built-in system utilities with expected functionality, but they're still used maliciously.
+
+Take vssadmin.exe, for example — commonly used by ransomware to delete Volume Shadow Copy backups before encrypting files. Although this is expected behaviour for the binary, most analysts still classify this as a LOTL technique.
+
+In other words, the practical definition of LOTL tends to be more inclusive than any formal list — it’s less about surprise functionality and more about intent and context.
