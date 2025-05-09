@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 
 layout: post
 
@@ -15,10 +15,17 @@ _Photo by [James Baltz](https://unsplash.com/@jimbob63) on [Unsplash](https://un
 
       
 
-Picture this: You’re reviewing a device timeline in the [Microsoft 365 Defender portal](https://security.microsoft.com) after a suspected breach. All the suspicious entries you see involve native Windows 11 binaries: `powershell.exe`, `cmd.exe`, `rundll32.exe`. There’s no obvious giveaway: no Mimikatz dumping credentials, no telltale ransomware payload pulled down by a browser download. Yet you know something isn’t right, but Defender hasn’t raised any alerts. It’s as if you’re chasing ghosts.
+Picture this: You’re reviewing a device timeline in the [Microsoft 365 Defender portal](https://security.microsoft.com) after a suspected breach. All the suspicious entries you see involve native Windows 11 binaries: `powershell.exe`, `cmd.exe`, `rundll32.exe`. There’s no obvious giveaway: no Mimikatz dumping credentials, no telltale ransomware payload pulled down by a browser. You know something isn’t right, Defender hasn’t raised any alerts. It’s as if you’re chasing ghosts. This is the new reality for security teams. 
 
-Living Off the Land (LOTL) is the new normal. From low-rent ransomware operators to state-sponsored APTs, adversaries now weaponise legitimate system tools rather than deploy malicious executables. In this post, I’ll give you my insight into the various definitions of "LOTL"  and based on [my research](assets/pdf/lotl_paper_nkavadias.pdf) I'll introduce a tiered framework for understanding the term, because spolier alert: it doesn't mean the same thing to everyone. 
+Living Off the Land (LOTL) threats are the new normal. From low-rent ransomware operators to state-sponsored APTs, adversaries now weaponise legitimate system tools rather than deploy malicious executables. In this post, I’ll give you survery of the various definitions of "LOTL"  and take a look at community projects that try and document LOTL tactics, threats and procedures (TPPs) and explain the variance in definitions. because spolier alert: LOTL doesn't mean the same thing to everyone. 
 
+## When is malware not malware?
+In CrowdStrike's 2025 Global Threat Report, it was found that 79% of detections were malware-free. Table 1 below highlights the increasing trend of malware-free detections (often involving Living-off-the-Land techniques) as reported in CrowdStrike's Global Threat Reports over the last six years.
+
+#### Figure 1: Rise of Malware-Free attacks in CrowdStrike's Annual Threat Reports
+![CrowdStrike Global Threat Report 2025 malware free attacks detected](/images/crowdstrike-global-threat-report-2025.png "Malware free attacks")
+
+*Source: [CrowdStrike Global Threat Reports](https://www.crowdstrike.com/resources/reports/)*
 ## LOTL: An Origin Story
 
 Traditionally, the phrase _“living off the land”_ describes the practice of subsisting on natural resources through farming and hunting. In cybersecurity, this same concept is applied to threat actors exploiting installed binaries, scripts, and tools on target systems to carry out malicious objectives.
