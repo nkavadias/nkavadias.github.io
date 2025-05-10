@@ -1,19 +1,19 @@
 ---
-published: false
+published: true
 
 layout: post
 
-title: "Living off the Land (LOTL): It’s Not Just for Subsistence Farmers Anymore!"
+title: "Living off the Land (LOTL): It’s Not Just for Subsistence Farmers Any More!"
 
 image: /images/james-baltz-zuhouVw4ZkQ-unsplash.jpg
 ---
 
-_xxxxxx, _
+_This post breaks down what the term *living-off-the-land* actually means in cyber security for defenders. Malware-free, file-less malware, LOTL, they are all used interchangeably, but do the mean the same thing? lines between legitimate system operations and malicious activities in modern cyber threats._
 
 ![living off the land techniques IRL]({{ site.baseurl }}/images/james-baltz-zuhouVw4ZkQ-unsplash.jpg "LOTL in cybersecurity") 
 _Photo by [James Baltz](https://unsplash.com/@jimbob63) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_  
 
-
+## The new reality
 Picture this: You’re reviewing a device timeline in the [Microsoft 365 Defender portal](https://security.microsoft.com){:target="_blank"} after a suspected breach. All the suspicious entries you see involve native Windows binaries: `powershell.exe`, `cmd.exe`, `rundll32.exe`. There’s no obvious giveaway: no Mimikatz dumping credentials, no telltale ransomware payload pulled down by a browser. You know something isn’t right but Defender hasn’t raised any alerts. It’s as if you’re chasing ghosts. This is the new reality for security teams. 
 
 This type of stealthy intrusion has become the new normal. State-sponsored APTs and even low-rent ransomware operators weaponise legitimate system tools rather than deploy malicious executables. These types of attacks have varying names malware-free, file-less malware or Living-off-the-Land (LOTL) attacks. 
@@ -71,4 +71,5 @@ This practical ambiguity is reflected in how security researchers, cyber threat 
 The Volt Typhoon campaign, attributed to a Chinese state-sponsored actor, exemplifies the LOTL threat.According to [Microsoft's analysis](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/?msockid=07040411902067f03a97117e9112665f), Volt Typhoon used a range of native Windows utilities like PowerShell, WMIC, netsh, and ntdsutil to perform tasks like system discovery, credential access, and data exfiltration. The most frightening part of the report was that many of the IOCs (Indicators of Compromise) were ambiguous because they commonly used in routine IT operations.  For example, netsh was used create and later delete port proxies on compromised systems. While netsh is a legitimate tool used for network configuration, its use in this context can be indicative of malicious activity.
 
 ## Conclusion
-LOTL
+The LOTL methods of using the system's own tools against itself is now the default mode for cyberattacks. With file-based malware detection being so effective, it's no surprise that threat actors have shifted to LOTL techniques, which are harder to detect and defend against. Traditional antivirus solutions relying on file signatures have becoming obsolete, with nearly 80% of attacks now classified as "malware-free." So, how do you defend against LOTL? In an upcoming post, I'll explore the countermeasures enterprises are adopting and examine promising research aimed at helping defenders get a handle on LOTL threats.
+
