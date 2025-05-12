@@ -8,13 +8,13 @@ title: "Living off the Land (LOTL): It’s Not Just for Subsistence Farmers Any 
 image: /images/james-baltz-zuhouVw4ZkQ-unsplash.jpg
 ---
 
-_This post breaks down what the term **living-off-the-land** actually means in cybersecurity for defenders. Malware-free, file-less malware, LOTL, they are all used interchangeably, but do the mean the same thing? lines between legitimate system operations and malicious activities in modern cyber threats._
+_This post breaks down what the term **living-off-the-land** (LOTL) actually means in cybersecurity for defenders. Malware-free, file-less malware, LOTL, they are all terms used to describe threats, sometimes interchangeably, but do the mean the same thing? The lines between legitimate user operations and malicious activities have become blurred._
 
 ![living off the land techniques IRL]({{ site.baseurl }}/images/james-baltz-zuhouVw4ZkQ-unsplash.jpg "LOTL in cybersecurity") 
 _Photo by [James Baltz](https://unsplash.com/@jimbob63) on [Unsplash](https://unsplash.com/s/photos/cyber-warfare-terrorism)_  
 
 ## The new reality
-_Picture this:_ You’re reviewing a device timeline in the [Microsoft 365 Defender portal](https://security.microsoft.com){:target="_blank"} after a suspected breach. All the suspicious entries you see involve native Windows binaries: `powershell.exe`, `cmd.exe`, `rundll32.exe`. There’s no obvious giveaway: no Mimikatz dumping credentials, no telltale ransomware payload pulled down by a browser. You know something isn’t right but Defender hasn’t raised any alerts. It’s as if you’re chasing ghosts. This is the new reality for security teams. 
+_Picture this:_ You’re reviewing a device timeline in the [Microsoft 365 Defender portal](https://security.microsoft.com){:target="_blank"} after a suspected breach. All the suspicious entries you see involve native Windows binaries: `powershell.exe`, `cmd.exe`, `rundll32.exe`. There’s no obvious giveaway: no Mimikatz dumping credentials, no telltale ransomware payload pulled down by a browser. You know something isn’t right. But Defender hasn’t raised any alerts? It’s as if you’re chasing ghosts. This is the new reality for security teams. 
 
 This type of stealthy intrusion has become the new normal. State-sponsored APTs and even low-rent ransomware operators weaponise legitimate system tools rather than deploy malicious executables. These types of attacks have varying names: malware-free, file-less malware or Living-off-the-Land (LOTL) attacks. 
 In this post, I’ll explain what the these terms mean, I'll take a look at two community projects that document LOTL TPPs (tactics, threats and procedures) and I'll attempt to explain the varying definitions of LOTL. 
@@ -23,7 +23,7 @@ In this post, I’ll explain what the these terms mean, I'll take a look at two 
 According to CrowdStrike's 2025 Global Threat Report, 79% of detections in 2024 were malware-free. _Figure 1_ below highlights the increasing trend of malware-free detections. CrowdStrike defines malware-free attacks as intrusions where no malicious binaries are written to disk. Instead, adversaries use system tools like PowerShell or Remote Desktop, operating in-memory or with hands-on-keyboard techniques. 
 
 #### Figure 1: Rise of Malware-Free attacks in CrowdStrike's Annual Threat Reports
-![CrowdStrike Global Threat Report 2025 malware free attacks detected](/images/crowdstrike-global-threat-report-2025.png "Malware free attacks"){: height="80%"}
+![CrowdStrike Global Threat Report 2025 malware free attacks detected](/images/crowdstrike-global-threat-report-2025.png "Malware free attacks"){: height="50%" width="50%"}
 
 *Source: [CrowdStrike Global Threat Reports](https://www.crowdstrike.com/resources/reports/){:target="_blank"}*
 ## Malware-Free ≠ Attack-Free
