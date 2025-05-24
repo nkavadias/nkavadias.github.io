@@ -6,81 +6,89 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
   <!-- Leaflet core CSS & JS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <!-- MarkerCluster plugin -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"/>
   <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
   <style>
     html, body, #map { margin:0; padding:0; height:100%; }
-    /* optional: custom cluster colors by count */
-    .marker-cluster-small { background-color: rgba(  0,150,  0,0.6); }
-    .marker-cluster-medium{ background-color: rgba(255,165,  0,0.6); }
-    .marker-cluster-large { background-color: rgba(255,  0,  0,0.6); }
-    .marker-cluster div { 
-      width: 32px; height:32px; margin:-16px 0 0 -16px; 
-      border-radius:16px; color:#fff; text-align:center; line-height:32px; 
+    .marker-cluster-small   { background-color: rgba(  0,150,  0,0.6); }
+    .marker-cluster-medium  { background-color: rgba(255,165,  0,0.6); }
+    .marker-cluster-large   { background-color: rgba(255,  0,  0,0.6); }
+    .marker-cluster div {
+      width: 32px; height:32px; margin:-16px 0 0 -16px;
+      border-radius:16px; color:#fff; text-align:center; line-height:32px;
     }
   </style>
 </head>
 <body>
   <div id="map"></div>
+
   <script>
-    // 1. Initialize map
-    const map = L.map('map').setView([-25, 135], 4);
+    // Initialize map
+    const map = L.map('map').setView([20, 0], 2);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // 2. Create a marker cluster group with custom icon creation
+    // Marker cluster group with summed counts for icons
     const markers = L.markerClusterGroup({
       iconCreateFunction: cluster => {
-        const count = cluster.getAllChildMarkers().reduce((sum, m) => sum + m.options.count, 0);
+        const total = cluster.getAllChildMarkers().reduce((sum, m) => sum + m.options.count, 0);
         let size = 'small';
-        if (count > 200) size = 'large';
-        else if (count > 50) size = 'medium';
-
+        if (total > 200) size = 'large';
+        else if (total > 50) size = 'medium';
         return L.divIcon({
-          html: count,
+          html: total,
           className: 'marker-cluster marker-cluster-' + size,
           iconSize: L.point(32, 32)
         });
       }
     });
 
-    // 3. Load your aggregated JSON
+    // Load aggregated data and plot
     fetch('results_aggregated.json')
       .then(res => res.json())
       .then(data => {
         data.forEach(p => {
-          if (p.latitude == null || p.longitude == null) return;
-          const popup = `
-            <strong>${p.city}, ${p.region}, ${p.country}</strong><br/>
-            Total hits: ${p.count}<br/>
-            Org: ${p.organization}
+          const { latitude, longitude, count, organization, city, region, country, ip_addresses } = p;
+          if (latitude == null || longitude == null) return;
+
+          // Build IP list HTML
+          const ips = ip_addresses || [];
+          const first10 = ips.slice(0, 10);
+          let ipHtml = '<ul style="padding-left:1em; margin:0;">';
+          first10.forEach(ip => { ipHtml += `<li>${ip}</li>`; });
+          ipHtml += '</ul>';
+          const moreCount = ips.length - first10.length;
+          if (moreCount > 0) {
+            ipHtml += `<p style="margin:0;">... ${moreCount} more not shown. <a href="results_aggregated.json" target="_blank">See full data</a></p>`;
+          }
+
+          const popupContent = `
+            <strong>${city}, ${region}, ${country}</strong><br/>
+            Total hits: ${count}<br/>
+            Organization: ${organization || 'n/a'}<br/>
+            IP Addresses:${ipHtml}
           `;
-          // circle marker with count stored in options
-          const m = L.circleMarker([p.latitude, p.longitude], {
-            radius: Math.log(p.count + 1) * 3,
+
+          const marker = L.circleMarker([latitude, longitude], {
+            radius: Math.log(count + 1) * 3,
             fillOpacity: 0.7,
             weight: 0.5,
-            count: p.count  // for cluster sum
-          }).bindPopup(popup);
-          markers.addLayer(m);
+            count: count
+          }).bindPopup(popupContent);
+
+          markers.addLayer(marker);
         });
+
         map.addLayer(markers);
+        // Zoom map to show all markers
+        map.fitBounds(markers.getBounds(), { padding: [20, 20] });
       })
       .catch(console.error);
   </script>
